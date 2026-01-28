@@ -35,31 +35,31 @@ const instructors = {
   aakriti: {
     name: 'Akash Prasad Barai',
     role: 'UI/UX Designer',
-    avatar: 'public/team/Akas Barai.jpeg',
+    avatar: '/team/Akas Barai.jpeg',
     bio: 'Creative designer with expertise in user-centered design and modern prototyping tools.'
   },
   akas: {
     name: 'Supriya Dwivedi',
     role: 'Full Stack Developer',
-    avatar: 'public/team/Supriya Dwivedi.jpg',
+    avatar: '/team/Supriya Dwivedi.jpg',
     bio: 'Experienced developer specializing in MERN stack and scalable web applications.'
   },
   anjali: {
     name: 'Anjali Bista',
     role: 'Graphic Designer',
-    avatar: 'public/team/Anjali Bista.jpg',
+    avatar: '/team/Anjali Bista.jpg',
     bio: 'Talented graphic designer with a passion for visual storytelling and branding.'
   },
   parwesh: {
     name: 'Akash Prasad Barai',
     role: 'QA Engineer',
-    avatar: 'public/team/Akas Barai.jpeg',
+    avatar: '/team/Akas Barai.jpeg',
     bio: 'Quality assurance expert focused on delivering bug-free software solutions.'
   },
   supriya: {
     name: 'Aakriti Bista',
     role: 'Digital Marketing Specialist',
-    avatar: 'public/team/Aakriti Bista.jpeg',
+    avatar: '/team/Aakriti Bista.jpeg',
     bio: 'Marketing strategist with skills in SEO, social media, and digital campaigns.'
   }
 };
