@@ -91,7 +91,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenEnrollment }) => {
               </div>
               
               <div className="space-y-4">
-                {UPCOMING_CLASSES.map((cls) => (
+                {UPCOMING_CLASSES.slice(0, 3).map((cls) => (
                   <div 
                     key={cls.id} 
                     className="relative p-5 rounded-3xl transition-all duration-300 bg-white border border-teal-500/20 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-500/10 group cursor-default shadow-sm"

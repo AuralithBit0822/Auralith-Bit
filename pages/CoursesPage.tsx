@@ -37,7 +37,7 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
   const [isSharing, setIsSharing] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
 
-  const categories = ['All', 'Web Development', 'Mobile Development', 'Data Science', 'Design', 'Cybersecurity'];
+  const categories = ['All', 'Web Development', 'Design', 'Quality Assurance', 'Marketing', 'Programming', 'Productivity'];
   const levels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
   const filteredCourses = useMemo(() => {
