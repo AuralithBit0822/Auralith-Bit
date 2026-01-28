@@ -8,27 +8,27 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
     {
       name: "Aakriti Bista",
       role: "Founder & CEO",
-      image: "pages/Aakriti Bista.jpeg"
+      image: "/team/Aakriti Bista.jpeg"
     },
     {
       name: "Anjali Bista",
       role: "Chief Technical Officer",
-      image: "pages/Anjali Bista.jpg"
+      image: "/team/Anjali Bista.jpg"
     },
     {
       name: "Akash Prasad Barai",
       role: "Project Manager",
-      image: "pages/Akas Barai.jpeg"
+      image: "/team/Akas Barai.jpeg"
     },
     {
       name: "Supriya Dwivedi",
       role: "Technical Lead",
-      image: "pages/Supriya Dwivedi.jpg"
+      image: "/team/Supriya Dwivedi.jpg"
     },
     {
       name: "Parwesh Kumar Karna",
       role: "Instructor",
-      image: "pages/Parwesh Kumar Karna.jpg"
+      image: "/team/Parwesh Kumar Karna.jpg"
     }
   ];
 
