@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
@@ -14,6 +13,12 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentView }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  // Check if we're on the home page
+  const isHomePage = currentView === 'home';
+  
+  // Determine if we should show light text (on home page without scroll)
+  const showLightText = isHomePage && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,10 +41,17 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentVi
     setIsOpen(false);
   };
 
+  // Dynamic classes based on page and scroll state
+  const navBgClass = showLightText 
+    ? 'bg-transparent py-5' 
+    : 'bg-white/90 backdrop-blur-md shadow-sm py-3';
+    
+  const textColorClass = showLightText ? 'text-white' : 'text-slate-900';
+  const hoverColorClass = showLightText ? 'hover:text-teal-300' : 'hover:text-teal-600';
+  const activeColorClass = showLightText ? 'text-teal-300' : 'text-teal-600';
+
   return (
-    <nav className={`fixed w-full z-[100] transition-all duration-300 ${
-      scrolled || currentView !== 'home' ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
-    }`}>
+    <nav className={`fixed w-full z-[100] transition-all duration-300 ${navBgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -48,8 +60,8 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentVi
             onClick={() => handleNavClick('home', '#home')}
           >
             <BrandLogo className="w-10 h-10" />
-            <span className="text-xl font-bold tracking-tight text-slate-900">
-              Auralith<span className="text-indigo-600">Bit</span>
+            <span className={`text-xl font-bold tracking-tight ${textColorClass}`}>
+              Auralith<span className={showLightText ? 'text-teal-300' : 'text-indigo-600'}>Bit</span>
             </span>
           </div>
 
@@ -59,8 +71,8 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentVi
               <button
                 key={item.label}
                 onClick={() => handleNavClick(item.view, item.href)}
-                className={`text-sm font-medium transition-colors hover:text-teal-600 ${
-                  currentView === item.view ? 'text-teal-600' : 'text-slate-600'
+                className={`text-sm font-medium transition-colors ${hoverColorClass} ${
+                  currentView === item.view ? activeColorClass : textColorClass
                 }`}
               >
                 {item.label}
@@ -68,7 +80,9 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentVi
             ))}
             <button 
               onClick={onOpenEnrollment}
-              className="bg-primary-gradient text-white px-5 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all active:scale-95"
+              className={`${showLightText 
+                ? 'bg-white/20 border border-white/30 hover:bg-white/30' 
+                : 'bg-primary-gradient'} text-white px-5 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all active:scale-95`}
             >
               Get Started
             </button>
@@ -78,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentVi
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-slate-900 focus:outline-none"
+              className={`${textColorClass} hover:opacity-80 focus:outline-none`}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
