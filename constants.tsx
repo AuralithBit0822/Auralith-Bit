@@ -271,33 +271,33 @@ export const UPCOMING_CLASSES: UpcomingClass[] = [
   { id: '1', title: 'UI/UX Designing Fundamentals', date: 'Nov 5', time: '10:00 AM', instructor: 'Akash Prasad Barai' },
   { id: '2', title: 'MERN Stack Introduction', date: 'Nov 7', time: '02:00 PM', instructor: 'Supriya Dwivedi' },
   { id: '3', title: 'Graphic Designing with Adobe', date: 'Nov 10', time: '09:00 AM', instructor: 'Anjali Bista' },
-  { id: '4', title: 'Quality Assurance Basics', date: 'Nov 12', time: '11:00 AM', instructor: 'Akasah Prasad Barai' },
-  { id: '5', title: 'Web Designing Workshop', date: 'Nov 15', time: '01:00 PM', instructor: 'Anjali Bista' },
+  { id: '4', title: 'Quality Assurance Basics', date: 'Nov 12', time: '11:00 AM', instructor: 'Akash Prasad Barai' },
+  { id: '5', title: 'Web Designing Workshop', date: 'Nov 15', time: '01:00 PM', instructor: 'Supriya Dwivedi' },
   { id: '6', title: 'Digital Marketing Strategies', date: 'Nov 18', time: '03:00 PM', instructor: 'Aakriti Bista' },
-  { id: '7', title: 'Python Programming', date: 'Nov 20', time: '10:00 AM', instructor: 'Suupriya Dwivedi' },
-  { id: '8', title: 'Office Package Training', date: 'Nov 22', time: '09:00 AM', instructor: 'Aakriti Bista' },
+  { id: '7', title: 'Python Programming', date: 'Nov 20', time: '10:00 AM', instructor: 'Supriya Dwivedi' },
+  { id: '8', title: 'Office Package Training', date: 'Nov 22', time: '09:00 AM', instructor: 'Anjali Bista' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'Elena Rodriguez',
+    name: 'Priyanka Sharma',
     role: 'Full Stack Developer',
-    content: 'Auralith Bit gave me real-world IT experience. The transition from student to professional was seamless thanks to their mentorship.',
+    content: 'Auralith Bit gave me real-world IT experience in Nepal. The transition from student to professional was seamless thanks to their excellent mentorship in Kathmandu.',
     avatar: 'https://picsum.photos/id/64/100/100'
   },
   {
     id: '2',
-    name: 'David Thompson',
+    name: 'Sanjay Maharjan',
     role: 'Startup Founder',
-    content: 'Professional delivery and innovative digital solutions. They transformed our legacy system into a high-performance modern app.',
+    content: 'Professional delivery and innovative digital solutions. They transformed our legacy system into a high-performance modern app. Highly recommended for Nepali students!',
     avatar: 'https://picsum.photos/id/91/100/100'
   },
   {
     id: '3',
     name: 'Priya Sharma',
     role: 'UI/UX Designer',
-    content: 'The curriculum is world-class. I learned tools and techniques that I use every day in my current role at a top tech firm.',
+    content: 'The curriculum is world-class. I learned tools and techniques that I use every day in my current role at a top tech company in Nepal.',
     avatar: 'https://picsum.photos/id/102/100/100'
   }
 ];
