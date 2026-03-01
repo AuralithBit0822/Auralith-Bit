@@ -24,12 +24,12 @@ export interface Course {
   originalPrice?: string;
   rating: number;
   reviewsCount: number;
-  instructor: {
+  instructors: {
     name: string;
     role: string;
     avatar: string;
     bio: string;
-  };
+  }[];
   learningOutcomes: string[];
   curriculum: CourseModule[];
 }

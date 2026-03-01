@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { 
   Search, 
@@ -349,14 +348,18 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
             </div>
 
             <div className="bg-white rounded-2xl p-10 border border-slate-100 shadow-sm">
-              <h2 className="text-2xl font-black text-slate-900 mb-8">Your Instructor</h2>
-              <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-                <img src={course.instructor.avatar} className="w-20 h-20 rounded-full object-cover ring-4 ring-slate-50 shadow-md" alt={course.instructor.name} />
-                <div className="space-y-1">
-                  <h4 className="text-xl font-bold text-slate-900">{course.instructor.name}</h4>
-                  <p className="text-blue-600 font-bold text-xs">{course.instructor.role}</p>
-                  <p className="text-slate-500 text-sm leading-relaxed max-w-lg mt-2">{course.instructor.bio}</p>
-                </div>
+              <h2 className="text-2xl font-black text-slate-900 mb-8">Your Instructors</h2>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {course.instructors.map((instructor, index) => (
+                  <div key={index} className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                    <img src={instructor.avatar} className="w-20 h-20 rounded-full object-cover ring-4 ring-slate-50 shadow-md" alt={instructor.name} />
+                    <div className="space-y-1">
+                      <h4 className="text-xl font-bold text-slate-900">{instructor.name}</h4>
+                      <p className="text-blue-600 font-bold text-xs">{instructor.role}</p>
+                      <p className="text-slate-500 text-sm leading-relaxed max-w-lg mt-2">{instructor.bio}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

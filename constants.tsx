@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Code,
@@ -38,6 +37,12 @@ const instructors = {
     avatar: '/team/Akas Barai.jpeg',
     bio: 'Creative designer with expertise in user-centered design and modern prototyping tools.'
   },
+  aakritiBista: {
+    name: 'Aakriti Bista',
+    role: 'Digital Marketing Specialist',
+    avatar: '/team/Aakriti Bista.jpeg',
+    bio: 'Marketing strategist with skills in SEO, social media, and digital campaigns.'
+  },
   akas: {
     name: 'Supriya Dwivedi',
     role: 'Full Stack Developer',
@@ -55,12 +60,6 @@ const instructors = {
     role: 'QA Engineer',
     avatar: '/team/Akas Barai.jpeg',
     bio: 'Quality assurance expert focused on delivering bug-free software solutions.'
-  },
-  supriya: {
-    name: 'Aakriti Bista',
-    role: 'Digital Marketing Specialist',
-    avatar: '/team/Aakriti Bista.jpeg',
-    bio: 'Marketing strategist with skills in SEO, social media, and digital campaigns.'
   }
 };
 
@@ -84,7 +83,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 35,000',
     rating: 4.7,
     reviewsCount: 56,
-    instructor: instructors.aakriti,
+    instructors: [instructors.aakriti, instructors.aakritiBista],
     learningOutcomes: ['Design Thinking', 'Visual Hierarchy', 'Prototyping in Figma', 'User Testing', 'Wireframing', 'Usability Testing'],
     curriculum: [
       { title: 'Module 1: Design Fundamentals', duration: '2 Weeks', topics: ['Color Theory', 'Typography', 'Layout Principles'] },
@@ -105,7 +104,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 45,000',
     rating: 4.8,
     reviewsCount: 124,
-    instructor: instructors.akas,
+    instructors: [instructors.akas, instructors.anjali],
     learningOutcomes: ['Master industry-standard tools', 'Understand core principles', 'Deploy applications', 'Build real-world projects', 'Collaborate in teams', 'Best coding practices'],
     curriculum: [
       { title: 'Module 1: Frontend with React', duration: '4 Weeks', topics: ['React Basics', 'Components', 'State Management'] },
@@ -126,7 +125,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 30,000',
     rating: 4.6,
     reviewsCount: 78,
-    instructor: instructors.anjali,
+    instructors: [instructors.anjali],
     learningOutcomes: ['Adobe Creative Suite', 'Branding Design', 'Digital Illustration', 'Print Design', 'Color Theory', 'Composition'],
     curriculum: [
       { title: 'Module 1: Design Basics', duration: '2 Weeks', topics: ['Elements of Design', 'Color Theory', 'Typography'] },
@@ -147,7 +146,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 38,000',
     rating: 4.7,
     reviewsCount: 92,
-    instructor: instructors.parwesh,
+    instructors: [instructors.akas, instructors.aakriti],
     learningOutcomes: ['Manual Testing', 'Automated Testing', 'Test Planning', 'Bug Tracking', 'Performance Testing', 'Agile Testing'],
     curriculum: [
       { title: 'Module 1: Testing Fundamentals', duration: '3 Weeks', topics: ['SDLC', 'Testing Types', 'Test Cases'] },
@@ -168,7 +167,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 32,000',
     rating: 4.5,
     reviewsCount: 105,
-    instructor: instructors.aakriti,
+    instructors: [instructors.akas],
     learningOutcomes: ['HTML5 & CSS3', 'Responsive Design', 'JavaScript Basics', 'Web Accessibility', 'SEO Principles', 'Version Control'],
     curriculum: [
       { title: 'Module 1: HTML & CSS', duration: '3 Weeks', topics: ['HTML Structure', 'CSS Styling', 'Flexbox & Grid'] },
@@ -189,7 +188,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 36,000',
     rating: 4.8,
     reviewsCount: 134,
-    instructor: instructors.supriya,
+    instructors: [instructors.aakritiBista],
     learningOutcomes: ['SEO & SEM', 'Social Media Marketing', 'Content Marketing', 'Email Marketing', 'Analytics', 'PPC Advertising'],
     curriculum: [
       { title: 'Module 1: Marketing Fundamentals', duration: '2 Weeks', topics: ['Digital Landscape', 'Target Audience', 'Marketing Strategy'] },
@@ -210,7 +209,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 40,000',
     rating: 4.9,
     reviewsCount: 156,
-    instructor: instructors.akas,
+    instructors: [instructors.akas],
     learningOutcomes: ['Python Syntax', 'Data Structures', 'Object-Oriented Programming', 'Libraries (Pandas, NumPy)', 'Web Scraping', 'Automation'],
     curriculum: [
       { title: 'Module 1: Python Basics', duration: '4 Weeks', topics: ['Syntax', 'Data Types', 'Control Flow'] },
@@ -231,7 +230,7 @@ export const COURSES: Course[] = [
     originalPrice: 'NPR 25,000',
     rating: 4.4,
     reviewsCount: 89,
-    instructor: instructors.anjali,
+    instructors: [instructors.anjali],
     learningOutcomes: ['Word Processing', 'Spreadsheet Management', 'Presentation Skills', 'Data Analysis in Excel', 'Collaboration Tools', 'Advanced Features'],
     curriculum: [
       { title: 'Module 1: Microsoft Word', duration: '2 Weeks', topics: ['Document Creation', 'Formatting', 'Mail Merge'] },
@@ -270,7 +269,7 @@ export const SOLUTIONS: Solution[] = [
 
 export const UPCOMING_CLASSES: UpcomingClass[] = [
   { id: '1', title: 'UI/UX Designing Fundamentals', date: 'Nov 5', time: '10:00 AM', instructor: 'Akash Prasad Barai' },
-  { id: '2', title: 'MERN Stack Introduction', date: 'Nov 7', time: '02:00 PM', instructor: 'Supriya Dwwivedi' },
+  { id: '2', title: 'MERN Stack Introduction', date: 'Nov 7', time: '02:00 PM', instructor: 'Supriya Dwivedi' },
   { id: '3', title: 'Graphic Designing with Adobe', date: 'Nov 10', time: '09:00 AM', instructor: 'Anjali Bista' },
   { id: '4', title: 'Quality Assurance Basics', date: 'Nov 12', time: '11:00 AM', instructor: 'Akasah Prasad Barai' },
   { id: '5', title: 'Web Designing Workshop', date: 'Nov 15', time: '01:00 PM', instructor: 'Anjali Bista' },

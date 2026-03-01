@@ -26,8 +26,8 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
       image: "/team/Supriya Dwivedi.jpg"
     },
     {
-      name: "Parwesh Kumar Karna",
-      role: "Instructor",
+      name: "Parwesh Kumar Karn",
+      role: "Operations Head",
       image: "/team/Parwesh Kumar Karna.jpg"
     }
   ];
