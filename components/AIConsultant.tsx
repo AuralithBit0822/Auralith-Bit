@@ -32,7 +32,7 @@ const WhatsAppIcon = () => (
 const AIConsultant: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'model', text: string }[]>([
-    { role: 'model', text: 'Hello! I am your Auralith Bit AI Consultant. How can I help you today with our professional IT courses or business solutions?' }
+    { role: 'model', text: 'Hello! I am your AuralithBit AI Consultant. How can I help you today with our professional IT courses or business solutions?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -62,10 +62,10 @@ const AIConsultant: React.FC = () => {
     try {
       const ai = new GoogleGenerativeAI(apiKey);
 
-      const systemInstruction = `You are the Auralith Bit Senior AI Consultant. Your purpose is to provide expert technical guidance to students and businesses.
+      const systemInstruction = `You are the AuralithBit Senior AI Consultant. Your purpose is to provide expert technical guidance to students and businesses.
 
           COMPANY CONTEXT:
-          - Auralith Bit is an IT Institute & Solutions provider.
+          - AuralithBit is an IT Institute & Solutions provider.
           - Slogan: "Design. Develop. Deliver."
 
           KEY OFFERINGS (Courses):
@@ -88,7 +88,7 @@ const AIConsultant: React.FC = () => {
           - Be professional, encouraging, and technically sharp.
           - If a user asks about pricing, mention NPR values found in our catalog.
           - Always mention "Enroll Now" or "Speak to an Expert" for conversion.
-          - Keep responses concise and focused on how Auralith Bit can solve the user's problem.`;
+          - Keep responses concise and focused on how AuralithBit can solve the user's problem.`;
 
       const model = ai.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
@@ -100,7 +100,7 @@ const AIConsultant: React.FC = () => {
           },
           {
             role: 'model',
-            parts: [{ text: 'Understood. I am ready to assist as the Auralith Bit Senior AI Consultant.' }],
+            parts: [{ text: 'Understood. I am ready to assist as the AuralithBit Senior AI Consultant.' }],
           },
           ...[...messages.slice(1), { role: 'user' as const, text: userMessage }]
             .filter((m, i) => !(i === 0 && m.role === 'model'))

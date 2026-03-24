@@ -45,7 +45,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenEnrollment }) => {
 
               <p className="text-xl text-slate-100 max-w-xl leading-relaxed font-medium">
                 We design with vision, develop with passion, and deliver with excellence.
-                Auralith Bit empowers the next generation of tech leaders.
+                AuralithBit empowers the next generation of tech leaders.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">

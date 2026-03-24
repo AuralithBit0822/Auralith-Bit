@@ -41,11 +41,11 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               <BrandLogo className="w-10 h-10" />
               <span className="text-2xl font-bold tracking-tight text-slate-900">
-                Auralith<span className="text-indigo-600">Bit</span>
+                <span className="text-indigo-600">AuralithBit</span>
               </span>
             </div>
             <p className="text-slate-500 leading-relaxed max-w-sm font-medium">
-              Designing with vision, developing with passion, and delivering with excellence. A global leader in IT education and enterprise solutions based in Nepal.
+              Designing with vision, developing with passion, and delivering with excellence. A growing leader in IT education and solutions based in Bhairahawa, Nepal.
             </p>
             <div className="flex gap-4">
               {socialLinks.map(({ Icon, bgColor, label, href }, i) => (
@@ -128,7 +128,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-400 text-sm font-medium">© 2025 Auralith Bit. All rights reserved.</p>
+          <p className="text-slate-400 text-sm font-medium">© 2025 AuralithBit. All rights reserved.</p>
           <div className="flex gap-8 text-sm text-slate-400 font-medium">
             <a href="#" className="hover:text-slate-600">Privacy Policy</a>
             <a href="#" className="hover:text-slate-600">Terms of Service</a>

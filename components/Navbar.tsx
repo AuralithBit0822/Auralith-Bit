@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenEnrollment, currentVi
           >
             <BrandLogo className="w-10 h-10" />
             <span className={`text-xl font-bold tracking-tight ${textColorClass}`}>
-              Auralith<span className={showLightText ? 'text-teal-300' : 'text-indigo-600'}>Bit</span>
+              <span className={showLightText ? 'text-teal-300' : 'text-indigo-600'}>AuralithBit</span>
             </span>
           </div>
 

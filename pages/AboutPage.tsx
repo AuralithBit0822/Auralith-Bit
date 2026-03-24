@@ -24,11 +24,6 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
       name: "Supriya Dwivedi",
       role: "Technical Lead",
       image: "/team/Supriya Dwivedi.jpg"
-    },
-    {
-      name: "Parwesh Kumar Karn",
-      role: "Operations Head",
-      image: "/team/Parwesh Kumar Karna.jpg"
     }
   ];
 
@@ -39,7 +34,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000"
-            alt="About Auralith Bit - Our Team"
+            alt="About AuralithBit - Our Team"
             className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
@@ -50,7 +45,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 tracking-tight leading-tight">
-            About <span className="text-gradient">Auralith Bit</span>
+            About <span className="text-gradient">AuralithBit</span>
           </h1>
           <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
             <span>Design</span>
@@ -70,7 +65,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-xs font-black text-indigo-600 uppercase tracking-[0.4em]">Our Foundation</h2>
-            <h3 className="text-4xl font-black text-slate-900 tracking-tight">What Drives Auralith Bit?</h3>
+            <h3 className="text-4xl font-black text-slate-900 tracking-tight">What Drives AuralithBit?</h3>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             {[
@@ -112,7 +107,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
              <div className="space-y-8">
                 <h2 className="text-4xl font-black text-slate-900 leading-tight">Bridging the Industry <br /><span className="text-indigo-600">Skill Gap.</span></h2>
                 <p className="text-lg text-slate-600 font-medium leading-relaxed">
-                  Traditional education often fails to keep pace with the rapid evolution of technology. At Auralith Bit, we operate as both a high-end development agency and an institute, creating a unique synergy.
+                   Traditional education often fails to keep pace with the rapid evolution of technology. At AuralithBit, we operate as both a high-end development agency and an institute, creating a unique synergy.
                 </p>
                 <div className="space-y-4">
                   {[
@@ -153,14 +148,14 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
       <section className="py-24 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-xs font-black text-indigo-600 uppercase tracking-[0.4em]">The Minds Behind Auralith Bit</h2>
+            <h2 className="text-xs font-black text-indigo-600 uppercase tracking-[0.4em]">The Minds Behind AuralithBit</h2>
             <h3 className="text-4xl font-black text-slate-900 tracking-tight">Our Leadership & Experts</h3>
             <p className="text-slate-500 max-w-2xl mx-auto font-medium">
               Meet the dedicated professionals committed to your technical growth and success.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, i) => (
               <div 
                 key={i} 

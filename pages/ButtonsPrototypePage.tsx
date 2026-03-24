@@ -74,7 +74,7 @@ const ButtonsPrototypePage: React.FC<ButtonsPrototypePageProps> = ({ onNavigate,
             Button <span className="text-gradient">Prototypes</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto font-medium">
-            Explore the functional core of the Auralith Bit platform. All buttons are now wired to real actions and tactile feedback.
+            Explore the functional core of the AuralithBit platform. All buttons are now wired to real actions and tactile feedback.
           </p>
         </div>
       </section>

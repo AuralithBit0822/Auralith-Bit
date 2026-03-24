@@ -1,9 +1,9 @@
-# Auralith Bit
+# AuralithBit
 
-**Auralith Bit – IT Institute & Solutions**  
+**AuralithBit – IT Institute & Solutions**  
 *Empowering learners with practical IT skills and digital solutions.*
 
-Auralith Bit is an IT education institute and solutions provider — offering professional training, hands-on courses, and technology support to students and professionals.
+AuralithBit is an IT education institute and solutions provider — offering professional training, hands-on courses, and technology support to students and professionals.
 
 📍 Based in Bhairahawa, Nepal 🇳🇵 with a focus on real-world IT skills and career-ready education.
 
@@ -11,12 +11,23 @@ Auralith Bit is an IT education institute and solutions provider — offering pr
 
 ## 🚀 About
 
-Auralith Bit aims to help students and learners build strong foundations in information technology and digital skill sets, with courses designed for beginners to advanced learners. The institute focuses on:
+AuralithBit aims to help students and learners build strong foundations in information technology and digital skill sets, with courses designed for beginners to advanced learners. The institute focuses on:
 
 - Practical, industry-oriented training
 - Skills for real jobs and projects
 - Hands-on learning approach
 - Career and business readiness
+
+---
+
+## 👥 Our Team
+
+We are a dedicated team of four professionals:
+
+- **Aakriti Bista** - Founder & CEO
+- **Anjali Bista** - Chief Technical Officer
+- **Akash Prasad Barai** - Project Manager
+- **Supriya Dwivedi** - Technical Lead
 
 ---
 
@@ -37,8 +48,8 @@ Current course offerings with Nepalese Rupee (NPR) pricing:
 
 ## 📋 Features & Benefits
 
-- 📌 Experienced instructors
-- 🔍 Project-based learning
+- 📌 Experienced instructors from our dedicated team
+- 🔍 Project-based learning with real-world applications
 - 🤝 Career guidance & placement support
 - 💻 Hands-on labs and practical exercises
 - 📈 Industry-aligned curriculum

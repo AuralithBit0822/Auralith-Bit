@@ -456,7 +456,7 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
           <section className="py-24 bg-white border-y border-slate-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                <div className="text-center mb-16 space-y-4">
-                  <h2 className="text-xs font-black text-teal-600 uppercase tracking-[0.4em]">The Auralith Advantage</h2>
+                   <h2 className="text-xs font-black text-teal-600 uppercase tracking-[0.4em]">The AuralithBit Advantage</h2>
                   <h3 className="text-4xl font-black text-slate-900 tracking-tight">Engineered for Technical Success</h3>
                </div>
                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -511,7 +511,7 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
                      <Sparkles className="w-8 h-8 text-white" />
                   </div>
                   <h2 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tight">
-                    Start Your Learning Journey<br />with Auralith Bit Today
+                    Start Your Learning Journey<br />with AuralithBit Today
                   </h2>
                   <div className="flex flex-col sm:flex-row gap-6 justify-center">
                     <button 

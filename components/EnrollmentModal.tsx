@@ -121,7 +121,7 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
               <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8">
                 {type === 'internship' ? <Briefcase className="w-6 h-6" /> : type === 'solution' ? <Globe className="w-6 h-6" /> : <Rocket className="w-6 h-6" />}
               </div>
-              <h2 className="text-3xl font-black leading-tight mb-4">Auralith <br /><span className="text-indigo-200">Excellence.</span></h2>
+              <h2 className="text-3xl font-black leading-tight mb-4">AuralithBit <br /><span className="text-indigo-200">Excellence.</span></h2>
               <p className="text-indigo-100/80 text-sm font-medium leading-relaxed">
                 Empowering technical minds and global businesses with precision engineering.
               </p>
@@ -245,7 +245,7 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
                       {!isSubmitting && <Send className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                     </button>
                     <p className="text-[10px] text-center text-slate-400 mt-4 font-bold uppercase tracking-[0.2em]">
-                      Auralith Bit • Secure Data Transmission
+                      AuralithBit • Secure Data Transmission
                     </p>
                   </div>
                 </form>

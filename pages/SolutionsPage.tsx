@@ -246,7 +246,7 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
               </h2>
               <div className="space-y-4">
                 <p className="text-indigo-50 text-xl max-w-2xl mx-auto font-medium opacity-90">
-                  Engineer your success with Auralith Bit's enterprise solutions.
+                  Engineer your success with AuralithBit's enterprise solutions.
                 </p>
                 <p className="text-indigo-100 text-sm max-w-xl mx-auto leading-relaxed opacity-75">
                   Our team of expert engineers and strategists are ready to partner with you to deliver high-performance, scalable, and secure digital products tailored to your unique business needs.

@@ -124,9 +124,9 @@ const InternshipPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment
             <span className="text-teal-400">Excel</span>
           </p>
 
-          <p className="text-indigo-100/70 text-base md:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
-            Join the Auralith Bit Internship Program. Work on live projects, get mentored by industry experts, and turn your knowledge into professional skills.
-          </p>
+           <p className="text-indigo-100/70 text-base md:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
+             Join the AuralithBit Internship Program. Work on live projects, get mentored by industry experts, and turn your knowledge into professional skills.
+           </p>
 
           <div className="flex justify-center">
             <button 
@@ -221,7 +221,7 @@ const InternshipPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment
                 <h2 className="text-3xl font-black text-[#0b0e29] mb-10">Are You Eligible?</h2>
                 <ul className="space-y-6 mb-12">
                   {[
-                    'Completed a relevant course at Auralith Bit',
+                    'Completed a relevant course at AuralithBit',
                     'Self-taught developer/designer with a portfolio',
                     'Final year IT students looking for project work',
                     'Dedicated and willing to learn in a fast-paced environment'

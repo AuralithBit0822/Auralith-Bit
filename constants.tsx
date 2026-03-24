@@ -283,35 +283,35 @@ export const TESTIMONIALS: Testimonial[] = [
     id: '1',
     name: 'Priyanka Sharma',
     role: 'Full Stack Developer',
-    content: 'Auralith Bit gave me real-world IT experience in Nepal. The transition from student to professional was seamless thanks to their excellent mentorship in Kathmandu.',
+    content: 'AuralithBit gave me real-world IT experience. The transition from student to professional was seamless thanks to their excellent mentorship.',
     avatar: 'https://picsum.photos/id/64/100/100'
   },
   {
     id: '2',
     name: 'Sanjay Maharjan',
     role: 'Startup Founder',
-    content: 'Professional delivery and innovative digital solutions. They transformed our legacy system into a high-performance modern app. Highly recommended for Nepali students!',
+    content: 'Professional delivery and innovative digital solutions. They transformed our legacy system into a high-performance modern app. Highly recommended!',
     avatar: 'https://picsum.photos/id/91/100/100'
   },
   {
     id: '3',
     name: 'Priya Sharma',
     role: 'UI/UX Designer',
-    content: 'The curriculum is world-class. I learned tools and techniques that I use every day in my current role at a top tech company in Nepal.',
+    content: 'The curriculum is world-class. I learned tools and techniques that I use every day in my current role at a tech company.',
     avatar: 'https://picsum.photos/id/102/100/100'
   }
 ];
 
 export const STATS: Stat[] = [
-  { label: 'Trained Learners', value: '18,000+' },
-  { label: 'Projects Delivered', value: '520+' },
-  { label: 'Expert Mentors', value: '65+' },
-  { label: 'Global Partners', value: '150+' }
+  { label: 'Trained Learners', value: '500+' },
+  { label: 'Projects Delivered', value: '50+' },
+  { label: 'Expert Mentors', value: '4+' },
+  { label: 'Global Partners', value: '20+' }
 ];
 
 export const WHY_CHOOSE_US = [
-  { title: 'Industry Expertise', description: 'Curriculum designed by active tech leaders.', icon: <Users className="w-6 h-6" /> },
-  { title: 'Real-world Exposure', description: 'Work on live client projects from day one.', icon: <Globe className="w-6 h-6" /> },
-  { title: 'Career Acceleration', description: '95% placement rate for our graduates.', icon: <TrendingUp className="w-6 h-6" /> },
-  { title: 'Modern Facilities', description: 'Cutting-edge tech stack and learning environment.', icon: <Lightbulb className="w-6 h-6" /> }
+  { title: 'Hands-on Training', description: 'Learn by building real projects with expert guidance.', icon: <Users className="w-6 h-6" /> },
+  { title: 'Real-world Experience', description: 'Work on live client projects from day one.', icon: <Globe className="w-6 h-6" /> },
+  { title: 'Career Support', description: 'Dedicated guidance for your tech career path.', icon: <TrendingUp className="w-6 h-6" /> },
+  { title: 'Modern Skills', description: 'Master cutting-edge tech stacks and tools.', icon: <Lightbulb className="w-6 h-6" /> }
 ];

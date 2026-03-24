@@ -20,14 +20,14 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onNavigate }) => {
               <p className="text-slate-800 font-bold text-lg mb-2">"Quality is never an accident; it is always the result of intelligent effort."</p>
               <div className="flex items-center gap-3">
                  <img className="w-8 h-8 rounded-full" src="https://picsum.photos/id/11/100/100" alt="Director" />
-                 <span className="text-xs text-slate-500">Director, Auralith Bit</span>
+                 <span className="text-xs text-slate-500">Director, AuralithBit</span>
               </div>
             </div>
           </div>
           
           <div className="space-y-12">
             <div>
-              <h2 className="text-sm font-bold tracking-widest text-indigo-600 uppercase mb-4">Why Auralith Bit?</h2>
+              <h2 className="text-sm font-bold tracking-widest text-indigo-600 uppercase mb-4">Why AuralithBit?</h2>
               <h3 className="text-4xl font-extrabold text-slate-900 mb-6">Redefining Tech Education & Industry Delivery</h3>
               <p className="text-lg text-slate-600">We don't just follow trends; we set them. Our unique blend of production-grade services and intensive training creates a loop of continuous excellence.</p>
             </div>

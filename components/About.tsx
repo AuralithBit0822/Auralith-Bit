@@ -19,7 +19,7 @@ const About: React.FC<AboutProps> = ({ onNavigate, onOpenEnrollment }) => {
               <h2 className="text-sm font-bold tracking-widest text-indigo-600 uppercase">Our Story</h2>
               <h3 className="text-4xl font-extrabold text-slate-900">Your Global Partner in IT Excellence</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Auralith Bit is a premier nexus of innovation where cutting-edge technology meets world-class education. We bridge the gap between academic theory and industry reality through immersive learning and enterprise delivery.
+                AuralithBit is a premier nexus of innovation where cutting-edge technology meets world-class education. We bridge the gap between academic theory and industry reality through immersive learning and enterprise delivery.
               </p>
             </div>
 

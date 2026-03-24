@@ -203,8 +203,8 @@ const ContactPage: React.FC<{ onNavigate: (v: View) => void }> = ({ onNavigate }
                <div className="bg-primary-gradient p-3 rounded-xl shadow-lg">
                   <MapPin className="text-white w-6 h-6" />
                </div>
-               <div>
-                  <h4 className="font-black text-slate-900 text-sm tracking-tight">Auralith Bit</h4>
+                <div>
+                   <h4 className="font-black text-slate-900 text-sm tracking-tight">AuralithBit</h4>
                   <p className="text-slate-500 font-bold uppercase text-[9px] tracking-[0.2em] mt-0.5">Lumbini Road, Bhairahawa, Nepal</p>
                </div>
             </div>
