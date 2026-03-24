@@ -5,7 +5,7 @@
 
 Auralith Bit is an IT education institute and solutions provider — offering professional training, hands-on courses, and technology support to students and professionals.
 
-📍 Based in Nepal 🇳🇵 with a focus on real-world IT skills and career-ready education. :contentReference[oaicite:1]{index=1}
+📍 Based in Bhairahawa, Nepal 🇳🇵 with a focus on real-world IT skills and career-ready education.
 
 ---
 
@@ -20,18 +20,18 @@ Auralith Bit aims to help students and learners build strong foundations in info
 
 ---
 
-## 🎓 Courses Offered
+## 🎓 Courses Offered (December 2025)
 
-(*Add specific courses here if known — e.g., Web Development, Graphics and UI/UX, Python, Networking, etc.*)
+Current course offerings with Nepalese Rupee (NPR) pricing:
 
-Examples (you can edit):
-
-- **Web Development**
-- **Software Engineering**
-- **Graphic Design & UI/UX**
-- **Digital Marketing**
-- **Networking & Security**
-- **Database Management**
+- **UI/UX Designing** - NPR 25,000 (2.5 Months)
+- **MERN Stack Development** - NPR 35,000 (3 Months)
+- **Graphic Designing** - NPR 20,000 (2 Months)
+- **Quality Assurance (QA)** - NPR 28,000 (2.5 Months)
+- **Web Designing** - NPR 22,000 (2 Months)
+- **Digital Marketing** - NPR 26,000 (2.5 Months)
+- **Python Programming** - NPR 30,000 (3 Months)
+- **Office Package** - NPR 15,000 (1.5 Months)
 
 ---
 
@@ -42,26 +42,28 @@ Examples (you can edit):
 - 🤝 Career guidance & placement support
 - 💻 Hands-on labs and practical exercises
 - 📈 Industry-aligned curriculum
+- 💰 Affordable Nepal-based pricing
+- 🎓 Offline, Online & Hybrid learning options
 
 ---
 
 ## 🧑‍💻 How to Join
 
-Enrollment and course details are typically shared via:
+Enrollment and course details are available via:
 
 - Official website: `https://www.auralithbit.com.np/`  
-- Social channels or contact numbers  
-(*Add actual links and emails here if available*)
+- Phone: +977 9766715783 / +977 9766715793
+- Email: info@auralithbit.com.np
+- Location: Lumbini Road, Bhairahawa, Rupandehi, Nepal
 
 ---
 
 ## 📞 Contact
 
-(*Replace these placeholders with real details if you have them*)
-
-- **Phone:** *e.g.,* +977 98154XXXX  
-- **Email:** *info@auralithbit.com.np*  
-- **Location:** *Nepal (exact city/address)*
+- **Phone:** +977 9766715783 / +977 9766715793  
+- **Email:** info@auralithbit.com.np
+- **Location:** Lumbini Road, Bhairahawa, Rupandehi, Nepal
+- **Hours:** Sunday - Friday, 7:00 AM - 6:00 PM
 
 ---
 
@@ -69,18 +71,18 @@ Enrollment and course details are typically shared via:
 
 Follow on Facebook for updates, promotions, and class info:
 
-👉 https://www.facebook.com/61583899281707/ :contentReference[oaicite:2]{index=2}
+👉 https://www.facebook.com/61583899281707/
 
 ---
 
 ## ⚠️ Notes
 
-- This README is a template based on available info and may need updates once full site content is added.
-- You can reorganize sections like “Courses,” “Contact,” and “About” as per your final content.
+- Course offerings and pricing updated for December 2025 session.
+- All prices are in Nepalese Rupees (NPR).
+- Contact for installment payment options available.
 
 ---
 
 ## 📄 License
 
 This project is for informational and documentation purposes.
-

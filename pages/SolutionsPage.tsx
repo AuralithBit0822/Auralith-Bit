@@ -67,31 +67,31 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
   const industries = ['E-Commerce', 'Education', 'Healthcare', 'Real Estate', 'Finance', 'Restaurants', 'Corporate', 'Creative Agencies'];
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       {/* 1️⃣ Hero Section */}
-      <section className="relative py-32 md:py-48 overflow-hidden flex items-center bg-slate-900">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900 pt-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
-            alt="Digital Solutions and Technology"
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
+            alt="Digital Solutions - Technology"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-slate-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
           <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px]" />
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-4">
             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Design. Develop. Deliver.</span>
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-black text-white tracking-tight leading-none mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight mb-4">
             Digital Solutions that <span className="text-gradient">Scale</span>
           </h1>
 
-          <p className="text-xl md:text-2xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-10 flex items-center justify-center gap-4">
+          <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
             <span>Vision</span>
             <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
             <span>Passion</span>
@@ -99,7 +99,7 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
             <span className="text-teal-400">Excellence</span>
           </p>
 
-          <p className="text-indigo-100/70 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+          <p className="text-indigo-100/70 text-base md:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
             From startups to enterprises, we deliver high-quality custom software and digital products designed to drive growth and efficiency.
           </p>
 

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Send, CheckCircle, Sparkles, User, Mail, Phone, BookOpen, Rocket, Briefcase, Building, Link as LinkIcon, Globe } from 'lucide-react';
 import { ModalType } from '../types';
+import { COURSES } from '../constants';
 
 interface EnrollmentModalProps {
   isOpen: boolean;
@@ -24,9 +25,11 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       // Set default selection based on type
+      const courseOptions = COURSES.map(c => c.title);
+      const internshipOptions = ['Web Development', 'UI/UX Design', 'Digital Marketing', 'Mobile App', 'Graphics Design', 'Full Stack'];
       const defaultSelection = 
-        type === 'course' ? 'Full Stack Web Development' :
-        type === 'internship' ? 'Web Development Track' :
+        type === 'course' ? courseOptions[0] :
+        type === 'internship' ? internshipOptions[0] :
         'Custom Software Solutions';
       setFormData(prev => ({ ...prev, selection: defaultSelection }));
     } else {
@@ -48,6 +51,11 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
   };
 
   const getModalContent = () => {
+    // Get course titles for enrollment form
+    const courseOptions = COURSES.map(c => c.title);
+    // Get internship track options
+    const internshipOptions = ['Web Development', 'UI/UX Design', 'Digital Marketing', 'Mobile App', 'Graphics Design', 'Full Stack'];
+    
     switch (type) {
       case 'internship':
         return {
@@ -55,9 +63,8 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
           subtitle: 'Launch your career as an intern.',
           selectionLabel: 'Internship Track',
           extraLabel: 'Portfolio / LinkedIn URL',
-          extraIcon: <LinkIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />,
           extraPlaceholder: 'https://...',
-          options: ['Web Development Track', 'UI/UX Design Track', 'Digital Marketing Track', 'Mobile App Track', 'Graphics Design Track'],
+          options: internshipOptions,
           benefits: ["Real Client Projects", "Expert Mentorship", "Career Path Guidance"],
           successMsg: "Our HR team will review your portfolio and contact you for an initial screening."
         };
@@ -67,9 +74,8 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
           subtitle: 'Get a tailored enterprise solution.',
           selectionLabel: 'Service Interest',
           extraLabel: 'Company Name',
-          extraIcon: <Building className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />,
           extraPlaceholder: 'Your Business Name',
-          options: ['Custom Software Solutions', 'Mobile App Development', 'Enterprise UI/UX Strategy', 'Cloud Infrastructure', 'Digital Transformation'],
+          options: ['Web Development', 'Mobile App Development', 'UI/UX Design', 'Digital Marketing', 'Custom Software'],
           benefits: ["Scalable Architecture", "Hardened Security", "24/7 Priority Support"],
           successMsg: "A solutions architect will call you within 24 hours to discuss your requirements."
         };
@@ -78,10 +84,9 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
           title: 'Quick Enrollment',
           subtitle: 'Secure your spot in our next cohort.',
           selectionLabel: 'Select Program',
-          extraLabel: '', // Courses don't need an extra field currently
-          extraIcon: null,
-          extraPlaceholder: '',
-          options: ['Full Stack Web Development', 'Data Science & AI with Python', 'UI/UX Design Masterclass', 'Mobile App Engineering', 'Cybersecurity Professional'],
+          extraLabel: 'Preferred Batch Time',
+          extraPlaceholder: 'e.g., Morning, Evening, Weekend',
+          options: courseOptions,
           benefits: ["Industry Mentorship", "Live Project Access", "Job Placement Support"],
           successMsg: "Check your email for the next steps and course orientation details."
         };
@@ -212,7 +217,13 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
                     <div className="space-y-2 animate-in fade-in slide-in-from-top-2">
                       <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{content.extraLabel}</label>
                       <div className="relative">
-                        {content.extraIcon}
+                        {type === 'internship' ? (
+                          <LinkIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                        ) : type === 'solution' ? (
+                          <Building className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                        ) : (
+                          <Rocket className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                        )}
                         <input 
                           required
                           type="text" 

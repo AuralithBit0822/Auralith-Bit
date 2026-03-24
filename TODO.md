@@ -22,3 +22,11 @@
 - [x] Revert InternshipPage.tsx background color and styling to original (slate-900)
 - [x] Revert ContactPage.tsx background color and styling to original (slate-900)
 - [x] Ensure all hero sections have matching styling and consistent UI
+
+# TODO: Update Content for December 2025
+
+- [x] Update upcoming classes dates from November to December 2025
+- [x] Update course statistics to reflect current numbers (18,000+ learners, 520+ projects, 65+ mentors, 150+ partners)
+- [x] Update README.md with December 2025 course listings and Nepal-specific pricing in NPR
+- [x] Verify all pricing is in Nepalese Rupees (NPR) - Already correct
+- [x] Verify all course durations and offerings are current

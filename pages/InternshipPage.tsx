@@ -91,32 +91,32 @@ const InternshipPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment
   ];
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       {/* 1️⃣ Hero Section */}
-      <section className="relative py-32 md:py-48 overflow-hidden flex items-center bg-slate-900">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900 pt-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000"
-            alt="Professional Team Collaboration"
-            className="absolute inset-0 w-full h-full object-cover opacity-25"
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=2000"
+            alt="Internship Program - Career Growth"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-slate-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
           <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px]" />
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-block px-5 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-black uppercase tracking-widest mb-8">
+          <div className="inline-block px-5 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-black uppercase tracking-widest mb-4">
             Career Accelerator
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-black text-white tracking-tight leading-none mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight mb-4">
             Kickstart Your Career with <br />
             <span className="text-gradient">Real Experience</span>
           </h1>
 
-          <p className="text-xl md:text-2xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-10 flex items-center justify-center gap-4">
+          <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
             <span>Learn</span>
             <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
             <span>Build</span>
@@ -124,7 +124,7 @@ const InternshipPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment
             <span className="text-teal-400">Excel</span>
           </p>
 
-          <p className="text-indigo-100/70 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+          <p className="text-indigo-100/70 text-base md:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
             Join the Auralith Bit Internship Program. Work on live projects, get mentored by industry experts, and turn your knowledge into professional skills.
           </p>
 

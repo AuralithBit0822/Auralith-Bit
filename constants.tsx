@@ -268,14 +268,14 @@ export const SOLUTIONS: Solution[] = [
 ];
 
 export const UPCOMING_CLASSES: UpcomingClass[] = [
-  { id: '1', title: 'UI/UX Designing Fundamentals', date: 'Nov 5', time: '10:00 AM', instructor: 'Akash Prasad Barai' },
-  { id: '2', title: 'MERN Stack Introduction', date: 'Nov 7', time: '02:00 PM', instructor: 'Supriya Dwivedi' },
-  { id: '3', title: 'Graphic Designing with Adobe', date: 'Nov 10', time: '09:00 AM', instructor: 'Anjali Bista' },
-  { id: '4', title: 'Quality Assurance Basics', date: 'Nov 12', time: '11:00 AM', instructor: 'Akash Prasad Barai' },
-  { id: '5', title: 'Web Designing Workshop', date: 'Nov 15', time: '01:00 PM', instructor: 'Supriya Dwivedi' },
-  { id: '6', title: 'Digital Marketing Strategies', date: 'Nov 18', time: '03:00 PM', instructor: 'Aakriti Bista' },
-  { id: '7', title: 'Python Programming', date: 'Nov 20', time: '10:00 AM', instructor: 'Supriya Dwivedi' },
-  { id: '8', title: 'Office Package Training', date: 'Nov 22', time: '09:00 AM', instructor: 'Anjali Bista' },
+  { id: '1', title: 'UI/UX Designing Fundamentals', date: 'Dec 3', time: '10:00 AM', instructor: 'Akash Prasad Barai' },
+  { id: '2', title: 'MERN Stack Introduction', date: 'Dec 5', time: '02:00 PM', instructor: 'Supriya Dwivedi' },
+  { id: '3', title: 'Graphic Designing with Adobe', date: 'Dec 8', time: '09:00 AM', instructor: 'Anjali Bista' },
+  { id: '4', title: 'Quality Assurance Basics', date: 'Dec 10', time: '11:00 AM', instructor: 'Akash Prasad Barai' },
+  { id: '5', title: 'Web Designing Workshop', date: 'Dec 12', time: '01:00 PM', instructor: 'Supriya Dwivedi' },
+  { id: '6', title: 'Digital Marketing Strategies', date: 'Dec 15', time: '03:00 PM', instructor: 'Aakriti Bista' },
+  { id: '7', title: 'Python Programming', date: 'Dec 17', time: '10:00 AM', instructor: 'Supriya Dwivedi' },
+  { id: '8', title: 'Office Package Training', date: 'Dec 19', time: '09:00 AM', instructor: 'Anjali Bista' },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -303,10 +303,10 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const STATS: Stat[] = [
-  { label: 'Trained Learners', value: '15,000+' },
-  { label: 'Projects Delivered', value: '450+' },
-  { label: 'Expert Mentors', value: '50+' },
-  { label: 'Global Partners', value: '120+' }
+  { label: 'Trained Learners', value: '18,000+' },
+  { label: 'Projects Delivered', value: '520+' },
+  { label: 'Expert Mentors', value: '65+' },
+  { label: 'Global Partners', value: '150+' }
 ];
 
 export const WHY_CHOOSE_US = [

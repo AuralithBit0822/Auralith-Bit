@@ -414,28 +414,28 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
   );
 
   return (
-    <div className="pt-20 bg-[#fafafa]">
+    <div className="pt-16 bg-[#fafafa]">
       {!selectedCourse ? (
         <>
           {/* HERO SECTION */}
-          <section className="relative py-32 md:py-48 overflow-hidden flex items-center bg-slate-900">
+          <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900 pt-16">
             <div className="absolute inset-0 z-0">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=2000"
-                alt="Modern Learning and Technology"
-                className="absolute inset-0 w-full h-full object-cover opacity-25"
+                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=2000"
+                alt="Our Programs - IT Courses"
+                className="absolute inset-0 w-full h-full object-cover opacity-40"
               />
-              <div className="absolute inset-0 bg-slate-900/70" />
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
               <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px]" />
               <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px]" />
               <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-              <h1 className="text-5xl md:text-8xl font-extrabold text-white mb-6 tracking-tight leading-none">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 tracking-tight leading-tight">
                 Our <span className="text-gradient">Programs</span>
               </h1>
-              <p className="text-xl md:text-2xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-6 flex items-center justify-center gap-4">
+              <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
                 <span>Learn</span>
                 <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
                 <span>Develop</span>
@@ -443,7 +443,7 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
                 <span className="text-teal-400">Master</span>
               </p>
               
-              <p className="text-indigo-100/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+              <p className="text-indigo-100/70 text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
                 Learn with Vision. Develop with Passion. Deliver with Excellence. Our flagship programs are engineered to build high-performance technical careers.
               </p>
             </div>

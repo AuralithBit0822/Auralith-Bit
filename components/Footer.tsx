@@ -29,12 +29,12 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   ];
 
   return (
-    <footer id="contact" className="bg-white pt-24 pb-12 border-t border-slate-100">
+    <footer id="contact" className="bg-white pt-16 pb-8 border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
           
-          <div className="lg:col-span-4 space-y-8">
+          <div className="lg:col-span-4 space-y-6">
             <div 
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => { onNavigate('home'); window.scrollTo(0, 0); }}
@@ -73,7 +73,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-4">
             <h4 className="font-bold text-slate-900 uppercase text-xs tracking-widest">Navigation</h4>
             <ul className="space-y-4">
               {NAV_ITEMS.map((item) => (
@@ -89,7 +89,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 space-y-6">
+          <div className="lg:col-span-3 space-y-4">
             <h4 className="font-bold text-slate-900 uppercase text-xs tracking-widest">Connect</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-slate-500">
@@ -110,7 +110,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 space-y-6">
+          <div className="lg:col-span-3 space-y-4">
             <h4 className="font-bold text-slate-900 uppercase text-xs tracking-widest">Newsletter</h4>
             <p className="text-slate-500 text-sm leading-relaxed max-w-sm font-medium">Join our local & global tech community.</p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
@@ -127,8 +127,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         </div>
 
-        <div className="pt-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-400 text-sm font-medium">© 2024 Auralith Bit. All rights reserved.</p>
+        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-slate-400 text-sm font-medium">© 2025 Auralith Bit. All rights reserved.</p>
           <div className="flex gap-8 text-sm text-slate-400 font-medium">
             <a href="#" className="hover:text-slate-600">Privacy Policy</a>
             <a href="#" className="hover:text-slate-600">Terms of Service</a>

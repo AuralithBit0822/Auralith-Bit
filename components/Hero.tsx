@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenEnrollment }) => {
   return (
     <section
       id="home"
-      className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-screen flex items-center"
+      className="relative pt-16 pb-12 lg:pt-20 lg:pb-16 overflow-hidden min-h-screen flex items-center"
       style={{
         backgroundImage: 'url(/Hero.jpg)',
         backgroundSize: 'cover',

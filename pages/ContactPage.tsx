@@ -25,26 +25,26 @@ const ContactPage: React.FC<{ onNavigate: (v: View) => void }> = ({ onNavigate }
   };
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-16 bg-white">
       {/* 1️⃣ Hero Section */}
-      <section className="relative py-32 md:py-48 overflow-hidden flex items-center bg-slate-900">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900 pt-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000"
-            alt="Professional Communication and Support"
-            className="absolute inset-0 w-full h-full object-cover opacity-25"
+            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2000"
+            alt="Contact Us - Get in Touch"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-slate-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
           <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px]" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px]" />
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-5xl md:text-8xl font-black text-white mb-6 tracking-tight leading-none">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-4 tracking-tight leading-tight">
             Contact <span className="text-gradient">Us</span>
           </h1>
-          <p className="text-xl md:text-2xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-6 flex items-center justify-center gap-4">
+          <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
             <span>Connect</span>
             <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
             <span>Support</span>
@@ -52,7 +52,7 @@ const ContactPage: React.FC<{ onNavigate: (v: View) => void }> = ({ onNavigate }
             <span className="text-teal-400">Success</span>
           </p>
           
-          <p className="text-indigo-100/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+          <p className="text-indigo-100/70 text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
             Have questions about our IT training or enterprise solutions? We're here to help you navigate your digital transformation journey.
           </p>
         </div>
