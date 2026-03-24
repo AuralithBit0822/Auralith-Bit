@@ -110,7 +110,7 @@ const InternshipPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment
             Career Accelerator
           </div>
           
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-2 sm:mb-4">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-3 sm:mb-4">
             Kickstart Your Career with <br className="hidden xs:block" />
             <span className="text-gradient">Real Experience</span>
           </h1>
@@ -127,12 +127,12 @@ const InternshipPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment
              Join the AuralithBit Internship Program. Work on live projects, get mentored by industry experts, and turn your knowledge into professional skills.
            </p>
 
-           <div className="flex justify-center mt-3 xs:mt-4 sm:mt-6">
+           <div className="flex justify-center mt-4 sm:mt-6">
             <button 
               onClick={() => onOpenEnrollment('internship')}
-              className="w-full sm:w-auto bg-primary-gradient text-white px-4 xs:px-5 sm:px-8 md:px-10 py-2 xs:py-2.5 sm:py-3 md:py-4 rounded-xl font-black text-[10px] xs:text-xs sm:text-sm md:text-base flex items-center justify-center gap-1.5 xs:gap-2 sm:gap-3 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95"
+              className="w-full sm:w-auto bg-primary-gradient text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-black text-sm sm:text-base flex items-center justify-center gap-2 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95"
             >
-              <Rocket className="w-4 h-4 xs:w-5 xs:h-5" />
+              <Rocket className="w-5 h-5" />
               Apply for Internship
             </button>
           </div>

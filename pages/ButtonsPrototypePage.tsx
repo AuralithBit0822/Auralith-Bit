@@ -71,17 +71,33 @@ const ButtonsPrototypePage: React.FC<ButtonsPrototypePageProps> = ({ onNavigate,
             <Command className="w-2.5 h-2.5 xs:w-3 xs:h-3" />
             UI Kit / Design System
           </div>
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black text-white mb-2 xs:mb-3 sm:mb-4 tracking-tight leading-tight">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-black text-white mb-3 sm:mb-4 tracking-tight leading-tight">
             Button <span className="text-gradient">Prototypes</span>
           </h1>
-          <p className="text-slate-400 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto font-medium px-1 xs:px-2">
+          <p className="text-slate-400 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto font-medium px-1 xs:px-2 mb-4 xs:mb-6">
             Explore the functional core of the AuralithBit platform. All buttons are now wired to real actions and tactile feedback.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+            <button 
+              onClick={() => document.getElementById('button-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-primary-gradient text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-black text-sm sm:text-base shadow-xl shadow-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2"
+            >
+              Explore Components
+              <ArrowRight className="w-4 h-4" />
+            </button>
+            <button 
+              onClick={() => { onNavigate('home'); window.scrollTo(0, 0); }}
+              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-black text-sm sm:text-base hover:bg-white/20 transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2"
+            >
+              Back to Home
+            </button>
+          </div>
         </div>
       </section>
 
       {/* 2️⃣ Showcase Grid */}
-      <section className="py-24 bg-slate-50/50">
+      <section id="button-showcase" className="py-24 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">

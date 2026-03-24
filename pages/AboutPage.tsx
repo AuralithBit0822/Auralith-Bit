@@ -43,7 +43,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
         </div>
 
         <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 sm:mb-4 tracking-tight leading-tight">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-3 sm:mb-4 tracking-tight leading-tight">
             About <span className="text-gradient">AuralithBit</span>
           </h1>
           <p className="text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl font-bold text-slate-300 tracking-[0.08em] xs:tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase mb-2 sm:mb-4 flex items-center justify-center gap-1.5 xs:gap-2 sm:gap-4">
@@ -67,10 +67,10 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
 
           <button 
             onClick={() => { document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' }); }}
-            className="bg-primary-gradient text-white px-5 xs:px-6 sm:px-8 py-2 xs:py-2.5 sm:py-3 rounded-lg xs:rounded-xl sm:rounded-xl font-bold text-[11px] xs:text-xs sm:text-sm flex items-center justify-center gap-2 mx-auto hover:shadow-xl hover:shadow-indigo-500/30 transition-all active:scale-95"
+            className="bg-primary-gradient text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 mx-auto hover:shadow-xl hover:shadow-indigo-500/30 transition-all hover:-translate-y-1 active:scale-95"
           >
             Learn More About Us
-            <ArrowRight className="w-3.5 h-3.5 xs:w-4 xs:h-4" />
+            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
       </section>

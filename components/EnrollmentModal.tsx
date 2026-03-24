@@ -99,17 +99,20 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
 
   return (
     <div className="fixed inset-0 z-[110] flex items-center justify-center p-3 sm:p-4">
+      {/* Overlay */}
       <div 
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300" 
         onClick={onClose}
       />
       
       <div className="relative w-full max-w-3xl max-h-[95vh] sm:max-h-[90vh] bg-white rounded-2xl sm:rounded-[2rem] lg:rounded-[2.5rem] shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-10 duration-500 flex flex-col">
+        {/* Close Button - Inside content but at top level */}
         <button 
           onClick={onClose}
-          className="absolute top-3 right-3 sm:top-6 sm:right-6 p-2 rounded-full hover:bg-slate-100 transition-colors z-10 text-slate-400 hover:text-slate-600"
+          className="absolute top-4 right-4 sm:top-6 sm:right-6 z-50 p-3 sm:p-4 rounded-full bg-white/90 hover:bg-slate-200 shadow-xl transition-all text-slate-500 hover:text-slate-800 hover:scale-110 active:scale-95"
+          aria-label="Close modal"
         >
-          <X className="w-5 h-5 sm:w-6 sm:h-6" />
+          <X className="w-6 h-6 sm:w-7 sm:h-7" />
         </button>
 
         <div className="grid md:grid-cols-12 h-full overflow-y-auto">

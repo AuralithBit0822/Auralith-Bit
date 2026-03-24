@@ -90,7 +90,7 @@ const App: React.FC = () => {
       ) : currentView === 'solutions' ? (
         <SolutionsPage onNavigate={navigate} onOpenEnrollment={() => openEnrollment('solution')} />
       ) : currentView === 'contact' ? (
-        <ContactPage onNavigate={navigate} />
+        <ContactPage onNavigate={navigate} onOpenEnrollment={() => openEnrollment('course')} />
       ) : currentView === 'prototype' ? (
         <ButtonsPrototypePage onNavigate={navigate} onOpenEnrollment={() => openEnrollment('course')} />
       ) : null}

@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenEnrollment }) => {
       }}
     >
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="absolute inset-0 bg-slate-900/70 z-0" />
 
       {/* Content wrapper */}
       <div className="relative z-10 max-w-7xl mx-auto px-2.5 xs:px-3 sm:px-6 lg:px-8 w-full">
@@ -37,30 +37,30 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenEnrollment }) => {
                 <span className="sm:hidden">AuralithBit</span>
               </div>
 
-              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-white">
+              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-white">
                 Design. Develop.<br />
 <span className="text-teal-300">
                   Deliver.
                 </span>
               </h1>
 
-              <p className="text-[10px] xs:text-xs sm:text-sm lg:text-base xl:text-lg text-slate-100 max-w-xl leading-relaxed font-medium">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-slate-100 max-w-xl leading-relaxed font-medium">
                 We design with vision, develop with passion, and deliver with excellence.
                 AuralithBit empowers the next generation of tech leaders.
               </p>
 
-              <div className="flex flex-col xs:flex-col sm:flex-row gap-1 xs:gap-1.5 sm:gap-3 lg:gap-4 pt-0.5 lg:pt-2">
+              <div className="flex flex-col xs:flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 pt-2 lg:pt-4">
                 <button
                   onClick={onOpenEnrollment}
-                  className="bg-primary-gradient text-white px-3.5 xs:px-4 sm:px-6 lg:px-8 py-1.5 xs:py-2 sm:py-3 lg:py-4 rounded-lg xs:rounded-xl sm:rounded-xl lg:rounded-2xl font-bold flex items-center justify-center gap-1.5 xs:gap-2 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95 text-[11px] xs:text-xs sm:text-sm"
+                  className="bg-primary-gradient text-white px-5 xs:px-6 sm:px-8 py-2.5 xs:py-3 sm:py-3 lg:py-4 rounded-xl sm:rounded-xl lg:rounded-2xl font-bold flex items-center justify-center gap-2 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95 text-xs sm:text-sm"
                 >
                   Join our Courses
-                  <ArrowRight className="w-3 h-3 xs:w-3.5 xs:h-3.5" />
+                  <ArrowRight className="w-4 h-4" />
                 </button>
 
                 <button
                   onClick={() => onNavigate('solutions')}
-                  className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-3.5 xs:px-4 sm:px-6 lg:px-8 py-1.5 xs:py-2 sm:py-3 lg:py-4 rounded-lg xs:rounded-xl sm:rounded-xl lg:rounded-2xl font-bold flex items-center justify-center gap-1.5 xs:gap-2 hover:bg-white/20 transition-all hover:-translate-y-1 active:scale-95 text-[11px] xs:text-xs sm:text-sm"
+                  className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-5 xs:px-6 sm:px-8 py-2.5 xs:py-3 sm:py-3 lg:py-4 rounded-xl sm:rounded-xl lg:rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-white/20 transition-all hover:-translate-y-1 active:scale-95 text-xs sm:text-sm"
                 >
                   Explore Solutions
                 </button>
@@ -68,16 +68,16 @@ const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenEnrollment }) => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 xs:gap-1.5 sm:gap-3 lg:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 lg:gap-4">
               {STATS.map((stat, idx) => (
                 <div
                   key={idx}
-                  className="bg-white/10 backdrop-blur-md p-1.5 xs:p-2 sm:p-3 lg:p-5 rounded-lg xs:rounded-xl sm:rounded-2xl lg:rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-300 group"
+                  className="bg-white/10 backdrop-blur-md p-2 sm:p-3 lg:p-5 rounded-xl sm:rounded-2xl lg:rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-300 group"
                 >
-                  <div className="text-sm xs:text-base sm:text-lg lg:text-xl xl:text-2xl font-extrabold text-teal-400 group-hover:scale-110 transition-transform">
+                  <div className="text-base sm:text-lg lg:text-xl xl:text-2xl font-extrabold text-teal-400 group-hover:scale-110 transition-transform">
                     {stat.value}
                   </div>
-                  <div className="text-[5px] xs:text-[6px] sm:text-[8px] lg:text-[10px] font-bold text-slate-200 uppercase tracking-widest mt-0.5 sm:mt-1">
+                  <div className="text-[8px] sm:text-[10px] lg:text-[12px] font-bold text-slate-200 uppercase tracking-widest mt-1 sm:mt-1">
                     {stat.label}
                   </div>
                 </div>

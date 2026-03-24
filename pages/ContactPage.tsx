@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { View } from '../types';
 
-const ContactPage: React.FC<{ onNavigate: (v: View) => void }> = ({ onNavigate }) => {
+const ContactPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () => void }> = ({ onNavigate, onOpenEnrollment }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -40,7 +40,7 @@ const ContactPage: React.FC<{ onNavigate: (v: View) => void }> = ({ onNavigate }
         </div>
 
         <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-2 sm:mb-4 tracking-tight leading-tight">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-white mb-3 sm:mb-4 tracking-tight leading-tight">
             Contact <span className="text-gradient">Us</span>
           </h1>
           <p className="text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl font-bold text-slate-300 tracking-[0.08em] xs:tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase mb-2 sm:mb-4 flex items-center justify-center gap-1.5 xs:gap-2 sm:gap-4">
@@ -51,14 +51,29 @@ const ContactPage: React.FC<{ onNavigate: (v: View) => void }> = ({ onNavigate }
             <span className="text-teal-400">Success</span>
           </p>
           
-          <p className="text-indigo-100/70 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed font-medium px-1 xs:px-2">
+          <p className="text-indigo-100/70 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed font-medium px-1 xs:px-2 mb-4 xs:mb-6">
             Have questions about our IT training or enterprise solutions? We're here to help you navigate your digital transformation journey.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+            <button 
+              onClick={onOpenEnrollment}
+              className="bg-primary-gradient text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-black text-sm sm:text-base shadow-xl shadow-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2"
+            >
+              Get Started Today
+            </button>
+            <button 
+              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-black text-sm sm:text-base hover:bg-white/20 transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2"
+            >
+              Send Us a Message
+            </button>
+          </div>
         </div>
       </section>
 
       {/* 2️⃣ "Get In Touch" Section */}
-      <section className="py-24 bg-slate-50/50">
+      <section id="contact-form" className="py-24 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">Get In Touch</h2>

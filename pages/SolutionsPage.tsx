@@ -86,7 +86,7 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
             <span className="text-[9px] xs:text-[9px] sm:text-[9px] md:text-[10px] font-black uppercase tracking-[0.15em] xs:tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] text-slate-400">Design. Develop. Deliver.</span>
           </div>
           
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-2 sm:mb-4">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-3 sm:mb-4">
             Digital Solutions that <span className="text-gradient">Scale</span>
           </h1>
 
@@ -102,10 +102,10 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
             From startups to enterprises, we deliver high-quality custom software and digital products designed to drive growth and efficiency.
           </p>
 
-          <div className="flex justify-center mt-3 xs:mt-4 sm:mt-6">
+          <div className="flex justify-center mt-4 sm:mt-6">
             <button 
               onClick={onOpenEnrollment}
-              className="bg-primary-gradient text-white px-4 xs:px-5 sm:px-8 md:px-10 py-2 xs:py-2.5 sm:py-3 md:py-4 rounded-xl font-black text-[10px] xs:text-xs sm:text-sm md:text-base shadow-xl shadow-indigo-500/20 hover:shadow-2xl transition-all active:scale-95"
+              className="bg-primary-gradient text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-black text-sm sm:text-base shadow-xl shadow-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/40 transition-all hover:-translate-y-1 active:scale-95"
             >
               Get a Free Consultation
             </button>
