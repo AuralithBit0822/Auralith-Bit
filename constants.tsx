@@ -82,7 +82,7 @@ export const COURSES: Course[] = [
     price: 'NPR 25,000',
     originalPrice: 'NPR 35,000',
     rating: 4.7,
-    reviewsCount: 56,
+    reviewsCount: 12,
     instructors: [instructors.aakriti, instructors.aakritiBista],
     learningOutcomes: ['Design Thinking', 'Visual Hierarchy', 'Prototyping in Figma', 'User Testing', 'Wireframing', 'Usability Testing'],
     curriculum: [
@@ -103,7 +103,7 @@ export const COURSES: Course[] = [
     price: 'NPR 35,000',
     originalPrice: 'NPR 45,000',
     rating: 4.8,
-    reviewsCount: 124,
+    reviewsCount: 18,
     instructors: [instructors.akas, instructors.anjali],
     learningOutcomes: ['Master industry-standard tools', 'Understand core principles', 'Deploy applications', 'Build real-world projects', 'Collaborate in teams', 'Best coding practices'],
     curriculum: [
@@ -124,7 +124,7 @@ export const COURSES: Course[] = [
     price: 'NPR 20,000',
     originalPrice: 'NPR 30,000',
     rating: 4.6,
-    reviewsCount: 78,
+    reviewsCount: 15,
     instructors: [instructors.anjali],
     learningOutcomes: ['Adobe Creative Suite', 'Branding Design', 'Digital Illustration', 'Print Design', 'Color Theory', 'Composition'],
     curriculum: [
@@ -145,7 +145,7 @@ export const COURSES: Course[] = [
     price: 'NPR 28,000',
     originalPrice: 'NPR 38,000',
     rating: 4.7,
-    reviewsCount: 92,
+    reviewsCount: 10,
     instructors: [instructors.akas, instructors.aakriti],
     learningOutcomes: ['Manual Testing', 'Automated Testing', 'Test Planning', 'Bug Tracking', 'Performance Testing', 'Agile Testing'],
     curriculum: [
@@ -166,7 +166,7 @@ export const COURSES: Course[] = [
     price: 'NPR 22,000',
     originalPrice: 'NPR 32,000',
     rating: 4.5,
-    reviewsCount: 105,
+    reviewsCount: 14,
     instructors: [instructors.akas],
     learningOutcomes: ['HTML5 & CSS3', 'Responsive Design', 'JavaScript Basics', 'Web Accessibility', 'SEO Principles', 'Version Control'],
     curriculum: [
@@ -187,7 +187,7 @@ export const COURSES: Course[] = [
     price: 'NPR 26,000',
     originalPrice: 'NPR 36,000',
     rating: 4.8,
-    reviewsCount: 134,
+    reviewsCount: 16,
     instructors: [instructors.aakritiBista],
     learningOutcomes: ['SEO & SEM', 'Social Media Marketing', 'Content Marketing', 'Email Marketing', 'Analytics', 'PPC Advertising'],
     curriculum: [
@@ -208,7 +208,7 @@ export const COURSES: Course[] = [
     price: 'NPR 30,000',
     originalPrice: 'NPR 40,000',
     rating: 4.9,
-    reviewsCount: 156,
+    reviewsCount: 20,
     instructors: [instructors.akas],
     learningOutcomes: ['Python Syntax', 'Data Structures', 'Object-Oriented Programming', 'Libraries (Pandas, NumPy)', 'Web Scraping', 'Automation'],
     curriculum: [
@@ -229,7 +229,7 @@ export const COURSES: Course[] = [
     price: 'NPR 15,000',
     originalPrice: 'NPR 25,000',
     rating: 4.4,
-    reviewsCount: 89,
+    reviewsCount: 11,
     instructors: [instructors.anjali],
     learningOutcomes: ['Word Processing', 'Spreadsheet Management', 'Presentation Skills', 'Data Analysis in Excel', 'Collaboration Tools', 'Advanced Features'],
     curriculum: [
@@ -303,10 +303,10 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const STATS: Stat[] = [
-  { label: 'Trained Learners', value: '500+' },
-  { label: 'Projects Delivered', value: '50+' },
+  { label: 'Trained Learners', value: '75+' },
+  { label: 'Projects Delivered', value: '12+' },
   { label: 'Expert Mentors', value: '4+' },
-  { label: 'Global Partners', value: '20+' }
+  { label: 'Industry Partners', value: '8+' }
 ];
 
 export const WHY_CHOOSE_US = [

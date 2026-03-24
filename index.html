@@ -3,7 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <meta name="description" content="AuralithBit - Premier IT Institute & Solutions. Design. Develop. Deliver.">
+    <meta name="theme-color" content="#4f46e5">
     <title>AuralithBit | IT Institute & Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,17 +13,37 @@
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .text-gradient {
             background: linear-gradient(135deg, #4f46e5 0%, #a855f7 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .bg-primary-gradient {
             background: linear-gradient(135deg, #4f46e5 0%, #a855f7 100%);
         }
         .bg-accent-gradient {
             background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        }
+        
+        /* Prevent horizontal overflow */
+        * {
+            max-width: 100%;
+        }
+        
+        /* Smooth animations */
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+        }
+        
+        /* Touch action for better mobile scrolling */
+        .snap-x {
+            scroll-snap-type: x mandatory;
         }
     </style>
 <script type="importmap">
@@ -37,7 +59,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-[#fafafa] text-slate-900 overflow-x-hidden">
+<body class="bg-[#fafafa] text-slate-900 antialiased">
     <div id="root"></div>
 <script type="module" src="/index.tsx"></script>
 </body>

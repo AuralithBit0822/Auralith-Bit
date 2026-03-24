@@ -98,44 +98,44 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[110] flex items-center justify-center p-3 sm:p-4">
       <div 
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300" 
         onClick={onClose}
       />
       
-      <div className="relative w-full max-w-3xl bg-white rounded-[2.5rem] shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-10 duration-500">
+      <div className="relative w-full max-w-3xl max-h-[95vh] sm:max-h-[90vh] bg-white rounded-2xl sm:rounded-[2rem] lg:rounded-[2.5rem] shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-10 duration-500 flex flex-col">
         <button 
           onClick={onClose}
-          className="absolute top-6 right-6 p-2 rounded-full hover:bg-slate-100 transition-colors z-10 text-slate-400 hover:text-slate-600"
+          className="absolute top-3 right-3 sm:top-6 sm:right-6 p-2 rounded-full hover:bg-slate-100 transition-colors z-10 text-slate-400 hover:text-slate-600"
         >
-          <X className="w-6 h-6" />
+          <X className="w-5 h-5 sm:w-6 sm:h-6" />
         </button>
 
-        <div className="grid md:grid-cols-12 h-full min-h-[600px]">
-          {/* Decorative Sidebar */}
-          <div className="hidden md:flex md:col-span-4 bg-primary-gradient p-10 flex-col justify-between text-white relative overflow-hidden">
+        <div className="grid md:grid-cols-12 h-full overflow-y-auto">
+          {/* Decorative Sidebar - Hidden on mobile */}
+          <div className="hidden md:flex md:col-span-4 bg-primary-gradient p-8 lg:p-10 flex-col justify-between text-white relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none" />
             
             <div className="relative z-10">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8">
-                {type === 'internship' ? <Briefcase className="w-6 h-6" /> : type === 'solution' ? <Globe className="w-6 h-6" /> : <Rocket className="w-6 h-6" />}
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-md rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8">
+                {type === 'internship' ? <Briefcase className="w-5 h-5 sm:w-6 sm:h-6" /> : type === 'solution' ? <Globe className="w-5 h-5 sm:w-6 sm:h-6" /> : <Rocket className="w-5 h-5 sm:w-6 sm:h-6" />}
               </div>
-              <h2 className="text-3xl font-black leading-tight mb-4">AuralithBit <br /><span className="text-indigo-200">Excellence.</span></h2>
-              <p className="text-indigo-100/80 text-sm font-medium leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl font-black leading-tight mb-3 sm:mb-4">AuralithBit <br /><span className="text-indigo-200">Excellence.</span></h2>
+              <p className="text-indigo-100/80 text-xs sm:text-sm font-medium leading-relaxed">
                 Empowering technical minds and global businesses with precision engineering.
               </p>
             </div>
 
-            <div className="relative z-10 space-y-6">
-              <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-indigo-100">
+            <div className="relative z-10 space-y-4 sm:space-y-6">
+              <div className="flex items-center gap-2 sm:gap-3 text-[10px] sm:text-[10px] font-bold uppercase tracking-widest text-indigo-100">
                 <div className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse" />
                 Applications Open
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {content.benefits.map((txt) => (
-                  <div key={txt} className="flex items-center gap-2 text-xs font-medium text-white/70">
-                    <CheckCircle className="w-4 h-4 text-teal-400 shrink-0" />
+                  <div key={txt} className="flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white/70">
+                    <CheckCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-teal-400 shrink-0" />
                     {txt}
                   </div>
                 ))}
@@ -144,69 +144,69 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
           </div>
 
           {/* Form Area */}
-          <div className="col-span-full md:col-span-8 p-8 md:p-12 bg-white flex flex-col justify-center">
+          <div className="col-span-full md:col-span-8 p-5 sm:p-8 md:p-10 lg:p-12 bg-white flex flex-col justify-center overflow-y-auto">
             {step === 'form' ? (
               <div className="animate-in fade-in slide-in-from-right-4 duration-500">
-                <div className="mb-8">
-                  <h3 className="text-3xl font-black text-slate-900 tracking-tight">{content.title}</h3>
-                  <p className="text-slate-400 text-sm font-medium mt-1">{content.subtitle}</p>
+                <div className="mb-5 sm:mb-8">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">{content.title}</h3>
+                  <p className="text-slate-400 text-xs sm:text-sm font-medium mt-1">{content.subtitle}</p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Full Name</label>
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <label className="text-[9px] sm:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Full Name</label>
                       <div className="relative">
-                        <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                        <User className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                         <input 
                           required
                           type="text" 
                           value={formData.name}
                           onChange={(e) => setFormData({...formData, name: e.target.value})}
                           placeholder="Alex Johnson"
-                          className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-sm font-medium"
+                          className="w-full pl-9 sm:pl-11 pr-3 sm:pr-4 py-2.5 sm:py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-xs sm:text-sm font-medium"
                         />
                       </div>
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Phone Number</label>
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <label className="text-[9px] sm:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Phone Number</label>
                       <div className="relative">
-                        <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                        <Phone className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                         <input 
                           required
                           type="tel" 
                           value={formData.phone}
                           onChange={(e) => setFormData({...formData, phone: e.target.value})}
                           placeholder="+977 9800000000"
-                          className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-sm font-medium"
+                          className="w-full pl-9 sm:pl-11 pr-3 sm:pr-4 py-2.5 sm:py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-xs sm:text-sm font-medium"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Email Address</label>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <label className="text-[9px] sm:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Email Address</label>
                     <div className="relative">
-                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                      <Mail className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                       <input 
                         required
                         type="email" 
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
                         placeholder="name@company.com"
-                        className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-sm font-medium"
+                        className="w-full pl-9 sm:pl-11 pr-3 sm:pr-4 py-2.5 sm:py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-xs sm:text-sm font-medium"
                       />
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{content.selectionLabel}</label>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <label className="text-[9px] sm:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{content.selectionLabel}</label>
                     <div className="relative">
-                      <BookOpen className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                      <BookOpen className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                       <select 
                         value={formData.selection}
                         onChange={(e) => setFormData({...formData, selection: e.target.value})}
-                        className="w-full pl-11 pr-10 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-sm font-bold text-slate-700 appearance-none"
+                        className="w-full pl-9 sm:pl-11 pr-8 sm:pr-10 py-2.5 sm:py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-xs sm:text-sm font-bold text-slate-700 appearance-none"
                       >
                         {content.options.map(opt => <option key={opt}>{opt}</option>)}
                       </select>
@@ -214,15 +214,15 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
                   </div>
 
                   {content.extraLabel && (
-                    <div className="space-y-2 animate-in fade-in slide-in-from-top-2">
-                      <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{content.extraLabel}</label>
+                    <div className="space-y-1.5 sm:space-y-2 animate-in fade-in slide-in-from-top-2">
+                      <label className="text-[9px] sm:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{content.extraLabel}</label>
                       <div className="relative">
                         {type === 'internship' ? (
-                          <LinkIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                          <LinkIcon className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                         ) : type === 'solution' ? (
-                          <Building className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                          <Building className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                         ) : (
-                          <Rocket className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300" />
+                          <Rocket className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-300" />
                         )}
                         <input 
                           required
@@ -230,45 +230,45 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClose, type
                           value={formData.extra}
                           onChange={(e) => setFormData({...formData, extra: e.target.value})}
                           placeholder={content.extraPlaceholder}
-                          className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-sm font-medium"
+                          className="w-full pl-9 sm:pl-11 pr-3 sm:pr-4 py-2.5 sm:py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-xs sm:text-sm font-medium"
                         />
                       </div>
                     </div>
                   )}
 
-                  <div className="pt-4">
+                  <div className="pt-2 sm:pt-4">
                     <button 
                       disabled={isSubmitting}
-                      className="w-full bg-primary-gradient text-white py-4 rounded-xl font-black text-sm flex items-center justify-center gap-3 hover:shadow-2xl hover:shadow-indigo-500/30 transition-all active:scale-95 disabled:opacity-70 group"
+                      className="w-full bg-primary-gradient text-white py-3 sm:py-4 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-2 sm:gap-3 hover:shadow-2xl hover:shadow-indigo-500/30 transition-all active:scale-95 disabled:opacity-70 group"
                     >
                       {isSubmitting ? "Processing Request..." : "Submit Application"}
-                      {!isSubmitting && <Send className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
+                      {!isSubmitting && <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                     </button>
-                    <p className="text-[10px] text-center text-slate-400 mt-4 font-bold uppercase tracking-[0.2em]">
+                    <p className="text-[9px] sm:text-[10px] text-center text-slate-400 mt-3 sm:mt-4 font-bold uppercase tracking-[0.2em]">
                       AuralithBit • Secure Data Transmission
                     </p>
                   </div>
                 </form>
               </div>
             ) : (
-              <div className="h-full flex flex-col items-center justify-center text-center space-y-6 animate-in zoom-in-95 duration-500">
-                <div className="w-20 h-20 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center shadow-inner">
-                  <CheckCircle className="w-10 h-10" />
+              <div className="h-full flex flex-col items-center justify-center text-center space-y-4 sm:space-y-6 animate-in zoom-in-95 duration-500">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center shadow-inner">
+                  <CheckCircle className="w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
-                <div className="space-y-3">
-                  <h3 className="text-3xl font-black text-slate-900">Request Confirmed!</h3>
-                  <p className="text-slate-500 text-base font-medium leading-relaxed max-w-[320px] mx-auto">
+                <div className="space-y-2 sm:space-y-3">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900">Request Confirmed!</h3>
+                  <p className="text-slate-500 text-xs sm:text-base font-medium leading-relaxed max-w-[320px] mx-auto">
                     Thank you, {formData.name.split(' ')[0]}! {content.successMsg}
                   </p>
                 </div>
                 <button 
                   onClick={onClose}
-                  className="bg-slate-900 text-white px-10 py-4 rounded-2xl font-black text-sm hover:bg-slate-800 transition-all shadow-xl active:scale-95"
+                  className="bg-slate-900 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm hover:bg-slate-800 transition-all shadow-xl active:scale-95"
                 >
                   Return to Website
                 </button>
-                <div className="flex items-center gap-2 text-indigo-600 font-black text-[10px] uppercase tracking-[0.3em]">
-                  <Sparkles className="w-4 h-4" />
+                <div className="flex items-center gap-2 text-indigo-600 font-black text-[9px] sm:text-[10px] uppercase tracking-[0.3em]">
+                  <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
                   Experience Excellence
                 </div>
               </div>

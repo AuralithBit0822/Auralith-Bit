@@ -29,25 +29,25 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   ];
 
   return (
-    <footer id="contact" className="bg-white pt-16 pb-8 border-t border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer id="contact" className="bg-white pt-8 xs:pt-10 sm:pt-16 pb-4 xs:pb-6 sm:pb-8 border-t border-slate-100">
+      <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 xs:gap-8 lg:gap-8 mb-8 xs:mb-10 sm:mb-12">
           
-          <div className="lg:col-span-4 space-y-6">
+          <div className="sm:col-span-2 lg:col-span-4 space-y-4 xs:space-y-5 sm:space-y-6">
             <div 
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => { onNavigate('home'); window.scrollTo(0, 0); }}
             >
-              <BrandLogo className="w-10 h-10" />
-              <span className="text-2xl font-bold tracking-tight text-slate-900">
+              <BrandLogo className="w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10" />
+              <span className="text-lg xs:text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
                 <span className="text-indigo-600">AuralithBit</span>
               </span>
             </div>
-            <p className="text-slate-500 leading-relaxed max-w-sm font-medium">
+            <p className="text-slate-500 leading-relaxed max-w-sm font-medium text-[11px] xs:text-sm">
               Designing with vision, developing with passion, and delivering with excellence. A growing leader in IT education and solutions based in Bhairahawa, Nepal.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-2.5 xs:gap-3 sm:gap-4">
               {socialLinks.map(({ Icon, bgColor, label, href }, i) => (
                 <a 
                   key={i} 
@@ -55,32 +55,32 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   target={href.startsWith('http') ? "_blank" : undefined}
                   rel={href.startsWith('http') ? "noopener noreferrer" : undefined}
                   aria-label={label}
-                  className={`w-10 h-10 rounded-full flex items-center justify-center text-white ${bgColor} transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1`}
+                  className={`w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-white ${bgColor} transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1`}
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="w-3.5 h-3.5 xs:w-4 xs:h-4 sm:w-5 sm:h-5" />
                 </a>
               ))}
             </div>
             
-            <div className="pt-4">
+            <div className="pt-1.5 xs:pt-2 sm:pt-4">
                <button 
                 onClick={() => { onNavigate('prototype'); window.scrollTo(0, 0); }}
-                className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition-colors"
+                className="flex items-center gap-1.5 xs:gap-2 text-[9px] xs:text-[10px] sm:text-xs font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition-colors"
                >
-                 <LayoutPanelLeft className="w-4 h-4" />
+                 <LayoutPanelLeft className="w-2.5 h-2.5 xs:w-3 xs:h-3 sm:w-4 sm:h-4" />
                  Explore Design System
                </button>
             </div>
           </div>
 
-          <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-bold text-slate-900 uppercase text-xs tracking-widest">Navigation</h4>
-            <ul className="space-y-4">
+          <div className="lg:col-span-2 space-y-2.5 xs:space-y-3 sm:space-y-4">
+            <h4 className="font-bold text-slate-900 uppercase text-[9px] xs:text-[10px] sm:text-xs tracking-widest">Navigation</h4>
+            <ul className="space-y-1.5 xs:space-y-2 sm:space-y-4">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
                   <button 
                     onClick={() => { onNavigate(item.view); window.scrollTo(0, 0); }}
-                    className="text-slate-500 hover:text-indigo-600 transition-colors text-sm font-medium"
+                    className="text-slate-500 hover:text-indigo-600 transition-colors text-[11px] xs:text-xs sm:text-sm font-medium"
                   >
                     {item.label}
                   </button>
@@ -89,37 +89,37 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-bold text-slate-900 uppercase text-xs tracking-widest">Connect</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-sm text-slate-500">
-                <Mail className="w-5 h-5 text-teal-600 shrink-0" />
-                <span className="font-medium">info@auralithbit.com.np</span>
+          <div className="lg:col-span-3 space-y-2.5 xs:space-y-3 sm:space-y-4">
+            <h4 className="font-bold text-slate-900 uppercase text-[9px] xs:text-[10px] sm:text-xs tracking-widest">Connect</h4>
+            <ul className="space-y-1.5 xs:space-y-2 sm:space-y-4">
+              <li className="flex items-start gap-1.5 xs:gap-2 sm:gap-3 text-[11px] xs:text-xs sm:text-sm text-slate-500">
+                <Mail className="w-3.5 h-3.5 xs:w-4 xs:h-4 sm:w-5 sm:h-5 text-teal-600 shrink-0 mt-0.5" />
+                <span className="font-medium break-all">info@auralithbit.com.np</span>
               </li>
-              <li className="flex items-start gap-3 text-sm text-slate-500">
-                <Phone className="w-5 h-5 text-teal-600 shrink-0" />
+              <li className="flex items-start gap-1.5 xs:gap-2 sm:gap-3 text-[11px] xs:text-xs sm:text-sm text-slate-500">
+                <Phone className="w-3.5 h-3.5 xs:w-4 xs:h-4 sm:w-5 sm:h-5 text-teal-600 shrink-0 mt-0.5" />
                 <div className="flex flex-col font-medium">
                   <span>+977 9766715783</span>
                   <span>+977 9766715793</span>
                 </div>
               </li>
-              <li className="flex items-start gap-3 text-sm text-slate-500">
-                <MapPin className="w-5 h-5 text-teal-600 shrink-0" />
+              <li className="flex items-start gap-1.5 xs:gap-2 sm:gap-3 text-[11px] xs:text-xs sm:text-sm text-slate-500">
+                <MapPin className="w-3.5 h-3.5 xs:w-4 xs:h-4 sm:w-5 sm:h-5 text-teal-600 shrink-0 mt-0.5" />
                 <span className="font-medium">Lumbini Road, Bhairahawa<br />Rupandehi, Nepal</span>
               </li>
             </ul>
           </div>
 
-          <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-bold text-slate-900 uppercase text-xs tracking-widest">Newsletter</h4>
-            <p className="text-slate-500 text-sm leading-relaxed max-w-sm font-medium">Join our local & global tech community.</p>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
+          <div className="sm:col-span-2 lg:col-span-3 space-y-2.5 xs:space-y-3 sm:space-y-4">
+            <h4 className="font-bold text-slate-900 uppercase text-[9px] xs:text-[10px] sm:text-xs tracking-widest">Newsletter</h4>
+            <p className="text-slate-500 text-[11px] xs:text-xs sm:text-sm leading-relaxed max-w-sm font-medium">Join our local & global tech community.</p>
+            <form className="flex flex-col sm:flex-row gap-1.5 xs:gap-2" onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
                 placeholder="Email address" 
-                className="bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 flex-grow"
+                className="bg-slate-50 border border-slate-200 rounded-xl px-2.5 xs:px-3 sm:px-4 py-2 xs:py-2.5 sm:py-3 text-[11px] xs:text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 flex-grow"
               />
-              <button className="bg-indigo-600 text-white p-3 rounded-xl hover:bg-indigo-700 transition-all font-bold">
+              <button className="bg-indigo-600 text-white px-3 xs:px-4 sm:px-5 py-2 xs:py-2.5 sm:py-3 rounded-xl hover:bg-indigo-700 transition-all font-bold text-[10px] xs:text-xs sm:text-sm">
                 Join
               </button>
             </form>
@@ -127,9 +127,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         </div>
 
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-400 text-sm font-medium">© 2025 AuralithBit. All rights reserved.</p>
-          <div className="flex gap-8 text-sm text-slate-400 font-medium">
+        <div className="pt-4 xs:pt-6 sm:pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-2 xs:gap-3 sm:gap-4">
+          <p className="text-slate-400 text-[11px] xs:text-xs sm:text-sm font-medium text-center sm:text-left">© 2026 AuralithBit. All rights reserved.</p>
+          <div className="flex flex-wrap justify-center gap-3 xs:gap-4 sm:gap-6 lg:gap-8 text-[11px] xs:text-xs sm:text-sm text-slate-400 font-medium">
             <a href="#" className="hover:text-slate-600">Privacy Policy</a>
             <a href="#" className="hover:text-slate-600">Terms of Service</a>
             <a href="#" className="hover:text-slate-600">Nepal Compliance</a>

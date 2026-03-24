@@ -52,28 +52,29 @@ const ButtonsPrototypePage: React.FC<ButtonsPrototypePageProps> = ({ onNavigate,
   };
 
   return (
-    <div className="pt-20 bg-white min-h-screen">
+    <div className="pt-20 bg-white">
       {/* 1️⃣ Hero Section */}
-      <section className="relative py-24 md:py-32 overflow-hidden flex items-center bg-slate-900">
+      <section className="relative min-h-auto sm:min-h-[70vh] flex items-center overflow-hidden bg-slate-900 py-8 xs:py-10 sm:py-16">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000" 
             alt="UI Design System" 
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
+            className="absolute inset-0 w-full h-full object-cover opacity-30 sm:opacity-20"
           />
-          <div className="absolute inset-0 bg-slate-900/60" />
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900" />
+          <div className="absolute top-[-10%] right-[-10%] w-[150px] xs:w-[200px] sm:w-[300px] md:w-[400px] h-[150px] xs:h-[200px] sm:h-[300px] md:h-[400px] bg-indigo-600/20 rounded-full blur-[50px] xs:blur-[60px] sm:blur-[80px] md:blur-[100px]" />
+          <div className="absolute bottom-[-10%] left-[-10%] w-[100px] xs:w-[150px] sm:w-[250px] md:w-[400px] h-[100px] xs:h-[150px] sm:h-[250px] md:h-[400px] bg-teal-500/10 rounded-full blur-[30px] xs:blur-[40px] sm:blur-[60px] md:blur-[80px]" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-[10px] font-black uppercase tracking-widest mb-6 backdrop-blur-md">
-            <Command className="w-3 h-3" />
+        <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="inline-flex items-center gap-1.5 xs:gap-2 px-2 xs:px-3 sm:px-4 py-1 xs:py-1.5 sm:py-2 rounded-full bg-white/10 border border-white/20 text-white text-[9px] xs:text-[9px] sm:text-[10px] font-black uppercase tracking-wider sm:tracking-widest mb-2 xs:mb-3 sm:mb-4 backdrop-blur-md">
+            <Command className="w-2.5 h-2.5 xs:w-3 xs:h-3" />
             UI Kit / Design System
           </div>
-          <h1 className="text-4xl md:text-7xl font-black text-white mb-6 tracking-tight leading-none">
+          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black text-white mb-2 xs:mb-3 sm:mb-4 tracking-tight leading-tight">
             Button <span className="text-gradient">Prototypes</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto font-medium">
+          <p className="text-slate-400 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto font-medium px-1 xs:px-2">
             Explore the functional core of the AuralithBit platform. All buttons are now wired to real actions and tactile feedback.
           </p>
         </div>

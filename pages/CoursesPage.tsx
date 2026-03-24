@@ -92,25 +92,25 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
 
   // Catalog View Component
   const CourseCatalog = () => (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="mb-12">
-        <h2 className="text-4xl font-black text-slate-900 mb-4 tracking-tight">Explore Our Programs</h2>
-        <p className="text-slate-500 text-lg max-w-3xl font-medium">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+      <div className="mb-8 sm:mb-12">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 mb-2 sm:mb-4 tracking-tight">Explore Our Programs</h2>
+        <p className="text-slate-500 text-sm sm:text-base lg:text-lg max-w-3xl font-medium">
           Discover courses designed by industry experts to help you master new skills and advance your career.
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-12">
-        {/* Sidebar Filters */}
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-10 lg:gap-12">
+        {/* Sidebar Filters - Collapsible on mobile */}
         <aside className="lg:w-64 shrink-0">
-          <div className="bg-white rounded-2xl border border-slate-100 p-6 shadow-sm space-y-8 sticky top-24">
+          <div className="bg-white rounded-2xl border border-slate-100 p-4 sm:p-6 shadow-sm space-y-6 sm:space-y-8 sticky top-24">
             <div className="flex items-center justify-between">
-              <h3 className="font-bold text-slate-900 flex items-center gap-2">
+              <h3 className="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
                 <Filter className="w-4 h-4" /> Filters
               </h3>
               <button 
                 onClick={() => { setFilterCategory('All'); setFilterLevel('All'); setSearchQuery(''); }}
-                className="text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors active:scale-95"
+                className="text-[10px] sm:text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors active:scale-95"
               >
                 Reset
               </button>
@@ -123,23 +123,23 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search courses..." 
-                className="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all placeholder:text-slate-400"
+                className="w-full pl-9 pr-3 py-2 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all placeholder:text-slate-400"
               />
             </div>
 
-            <div className="space-y-4">
-              <h4 className="font-bold text-slate-900 text-sm">Category</h4>
-              <div className="space-y-2">
+            <div className="space-y-3 sm:space-y-4">
+              <h4 className="font-bold text-slate-900 text-xs sm:text-sm">Category</h4>
+              <div className="space-y-1.5 sm:space-y-2">
                 {categories.map(cat => (
-                  <label key={cat} className="flex items-center gap-2.5 cursor-pointer group">
+                  <label key={cat} className="flex items-center gap-2 cursor-pointer group">
                     <input 
                       type="radio" 
                       name="category" 
                       checked={filterCategory === cat}
                       onChange={() => setFilterCategory(cat)}
-                      className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-slate-300"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600 focus:ring-blue-500 border-slate-300"
                     />
-                    <span className={`text-[13px] font-medium transition-colors ${filterCategory === cat ? 'text-blue-600' : 'text-slate-500 group-hover:text-slate-700'}`}>
+                    <span className={`text-[12px] sm:text-[13px] font-medium transition-colors ${filterCategory === cat ? 'text-blue-600' : 'text-slate-500 group-hover:text-slate-700'}`}>
                       {cat}
                     </span>
                   </label>
@@ -147,19 +147,19 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="font-bold text-slate-900 text-sm">Level</h4>
-              <div className="space-y-2">
+            <div className="space-y-3 sm:space-y-4">
+              <h4 className="font-bold text-slate-900 text-xs sm:text-sm">Level</h4>
+              <div className="space-y-1.5 sm:space-y-2">
                 {levels.map(level => (
-                  <label key={level} className="flex items-center gap-2.5 cursor-pointer group">
+                  <label key={level} className="flex items-center gap-2 cursor-pointer group">
                     <input 
                       type="radio" 
                       name="level" 
                       checked={filterLevel === level}
                       onChange={() => setFilterLevel(level)}
-                      className="w-4 h-4 text-blue-600 focus:ring-blue-500 border-slate-300"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600 focus:ring-blue-500 border-slate-300"
                     />
-                    <span className={`text-[13px] font-medium transition-colors ${filterLevel === level ? 'text-blue-600' : 'text-slate-500 group-hover:text-slate-700'}`}>
+                    <span className={`text-[12px] sm:text-[13px] font-medium transition-colors ${filterLevel === level ? 'text-blue-600' : 'text-slate-500 group-hover:text-slate-700'}`}>
                       {level}
                     </span>
                   </label>
@@ -171,70 +171,70 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
 
         {/* Course Grid */}
         <div className="flex-1">
-          <div className="flex items-center justify-between mb-6">
-            <p className="text-sm font-medium text-slate-500">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0 mb-4 sm:mb-6">
+            <p className="text-xs sm:text-sm font-medium text-slate-500">
               Showing <span className="text-slate-900 font-bold">{filteredCourses.length}</span> courses
             </p>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-medium text-slate-400">Sort by:</span>
+              <span className="text-xs sm:text-sm font-medium text-slate-400">Sort by:</span>
               <div className="flex items-center gap-1 group cursor-pointer">
-                <span className="text-sm font-bold text-slate-900">{sortBy}</span>
-                <ChevronDown className="w-4 h-4 text-slate-900" />
+                <span className="text-xs sm:text-sm font-bold text-slate-900">{sortBy}</span>
+                <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-slate-900" />
               </div>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
             {filteredCourses.map((course) => (
               <div 
                 key={course.id} 
                 className="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group cursor-pointer active:scale-[0.98]"
                 onClick={() => { setSelectedCourse(course); window.scrollTo(0, 0); }}
               >
-                <div className="h-48 relative overflow-hidden bg-slate-100">
+                <div className="h-40 sm:h-48 relative overflow-hidden bg-slate-100">
                   <img 
                     src={`https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600&sig=${course.id}`} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     alt={course.title} 
                   />
-                  <div className="absolute top-3 right-3 bg-white/95 px-3 py-1 rounded-md shadow-sm">
-                    <span className="text-[10px] font-black uppercase tracking-wider text-blue-600">{course.tag}</span>
+                  <div className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-white/95 px-2 sm:px-3 py-0.5 sm:py-1 rounded-md shadow-sm">
+                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-blue-600">{course.tag}</span>
                   </div>
                 </div>
 
-                <div className="p-6 flex-1 flex flex-col">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded ${
+                <div className="p-4 sm:p-6 flex-1 flex flex-col">
+                  <div className="flex items-center justify-between mb-2 sm:mb-3">
+                    <span className={`text-[9px] sm:text-[10px] font-black uppercase tracking-widest px-1.5 sm:px-2 py-0.5 rounded ${
                       course.level === 'Beginner' ? 'bg-emerald-50 text-emerald-600' :
                       course.level === 'Intermediate' ? 'bg-amber-50 text-amber-600' : 'bg-red-50 text-red-600'
                     }`}>
                       {course.level}
                     </span>
                     <div className="flex items-center gap-1">
-                      <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                      <span className="text-xs font-bold text-slate-900">{course.rating}</span>
-                      <span className="text-[10px] text-slate-400">({course.reviewsCount})</span>
+                      <Star className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-yellow-400 text-yellow-400" />
+                      <span className="text-[10px] sm:text-xs font-bold text-slate-900">{course.rating}</span>
+                      <span className="text-[9px] sm:text-[10px] text-slate-400">({course.reviewsCount})</span>
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2 sm:mb-4 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
                     {course.title}
                   </h3>
                   
-                  <div className="flex items-center gap-4 text-slate-500 text-[11px] font-medium mb-6">
-                    <div className="flex items-center gap-1.5">
-                       <Briefcase className="w-3.5 h-3.5 text-slate-400" />
+                  <div className="flex items-center gap-3 sm:gap-4 text-slate-500 text-[10px] sm:text-[11px] font-medium mb-4 sm:mb-6">
+                    <div className="flex items-center gap-1">
+                       <Briefcase className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-400" />
                        {course.duration}
                     </div>
-                    <div className="flex items-center gap-1.5">
-                       <Users className="w-3.5 h-3.5 text-slate-400" />
+                    <div className="flex items-center gap-1">
+                       <Users className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-400" />
                        {course.mode}
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-end mt-auto pt-5 border-t border-slate-50">
-                    <span className="text-xs font-bold text-slate-400 group-hover:text-blue-600 transition-colors flex items-center gap-0.5">
-                      Details <ChevronRight className="w-3.5 h-3.5" />
+                  <div className="flex items-center justify-end mt-auto pt-3 sm:pt-5 border-t border-slate-50">
+                    <span className="text-[10px] sm:text-xs font-bold text-slate-400 group-hover:text-blue-600 transition-colors flex items-center gap-0.5">
+                      Details <ChevronRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                     </span>
                   </div>
                 </div>
@@ -418,32 +418,31 @@ const CoursesPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: (
       {!selectedCourse ? (
         <>
           {/* HERO SECTION */}
-          <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900 pt-16">
+          <section className="relative min-h-auto sm:min-h-[70vh] flex items-center overflow-hidden bg-slate-900 py-8 xs:py-10 sm:py-16">
             <div className="absolute inset-0 z-0">
               <img
                 src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=2000"
                 alt="Our Programs - IT Courses"
-                className="absolute inset-0 w-full h-full object-cover opacity-40"
+                className="absolute inset-0 w-full h-full object-cover opacity-30 sm:opacity-40"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
-              <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px]" />
-              <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px]" />
-              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900" />
+              <div className="absolute top-[-10%] right-[-10%] w-[150px] xs:w-[200px] sm:w-[300px] md:w-[400px] h-[150px] xs:h-[200px] sm:h-[300px] md:h-[400px] bg-indigo-600/20 rounded-full blur-[50px] xs:blur-[60px] sm:blur-[80px] md:blur-[100px]" />
+              <div className="absolute bottom-[-10%] left-[-10%] w-[100px] xs:w-[150px] sm:w-[250px] md:w-[400px] h-[100px] xs:h-[150px] sm:h-[250px] md:h-[400px] bg-teal-500/10 rounded-full blur-[30px] xs:blur-[40px] sm:blur-[60px] md:blur-[80px]" />
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 tracking-tight leading-tight">
+            <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 sm:mb-4 tracking-tight leading-tight">
                 Our <span className="text-gradient">Programs</span>
               </h1>
-              <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
+              <p className="text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl font-bold text-slate-300 tracking-[0.08em] xs:tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase mb-2 sm:mb-4 flex items-center justify-center gap-1.5 xs:gap-2 sm:gap-4">
                 <span>Learn</span>
-                <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
+                <span className="w-1.5 h-1.5 xs:w-1.5 sm:w-2 xs:h-1.5 sm:h-2 rounded-full bg-indigo-500"></span>
                 <span>Develop</span>
-                <span className="w-2 h-2 rounded-full bg-teal-500"></span>
+                <span className="w-1.5 h-1.5 xs:w-1.5 sm:w-2 xs:h-1.5 sm:h-2 rounded-full bg-teal-500"></span>
                 <span className="text-teal-400">Master</span>
               </p>
               
-              <p className="text-indigo-100/70 text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed font-medium">
+              <p className="text-indigo-100/70 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed font-medium px-1 xs:px-2">
                 Learn with Vision. Develop with Passion. Deliver with Excellence. Our flagship programs are engineered to build high-performance technical careers.
               </p>
             </div>

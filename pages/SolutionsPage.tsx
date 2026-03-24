@@ -69,44 +69,43 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
   return (
     <div className="pt-16 bg-white">
       {/* 1️⃣ Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900 pt-16">
+      <section className="relative min-h-auto sm:min-h-[70vh] flex items-center overflow-hidden bg-slate-900 py-8 xs:py-10 sm:py-16">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
             alt="Digital Solutions - Technology"
-            className="absolute inset-0 w-full h-full object-cover opacity-40"
+            className="absolute inset-0 w-full h-full object-cover opacity-30 sm:opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900" />
-          <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px]" />
-          <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px]" />
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')] opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900" />
+          <div className="absolute top-[-10%] right-[-10%] w-[150px] xs:w-[200px] sm:w-[300px] md:w-[400px] h-[150px] xs:h-[200px] sm:h-[300px] md:h-[400px] bg-indigo-600/20 rounded-full blur-[50px] xs:blur-[60px] sm:blur-[80px] md:blur-[100px]" />
+          <div className="absolute bottom-[-10%] left-[-10%] w-[100px] xs:w-[150px] sm:w-[250px] md:w-[400px] h-[100px] xs:h-[150px] sm:h-[250px] md:h-[400px] bg-teal-500/10 rounded-full blur-[30px] xs:blur-[40px] sm:blur-[60px] md:blur-[80px]" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="flex justify-center mb-4">
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Design. Develop. Deliver.</span>
+        <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="flex justify-center mb-1.5 xs:mb-2 sm:mb-3">
+            <span className="text-[9px] xs:text-[9px] sm:text-[9px] md:text-[10px] font-black uppercase tracking-[0.15em] xs:tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] text-slate-400">Design. Develop. Deliver.</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight mb-4">
+          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-2 sm:mb-4">
             Digital Solutions that <span className="text-gradient">Scale</span>
           </h1>
 
-          <p className="text-lg md:text-xl font-bold text-slate-300 tracking-[0.25em] uppercase mb-4 flex items-center justify-center gap-4">
+          <p className="text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl font-bold text-slate-300 tracking-[0.08em] xs:tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase mb-2 sm:mb-4 flex items-center justify-center gap-1.5 xs:gap-2 sm:gap-4">
             <span>Vision</span>
-            <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
+            <span className="w-1.5 h-1.5 xs:w-1.5 sm:w-2 xs:h-1.5 sm:h-2 rounded-full bg-indigo-500"></span>
             <span>Passion</span>
-            <span className="w-2 h-2 rounded-full bg-teal-500"></span>
+            <span className="w-1.5 h-1.5 xs:w-1.5 sm:w-2 xs:h-1.5 sm:h-2 rounded-full bg-teal-500"></span>
             <span className="text-teal-400">Excellence</span>
           </p>
 
-          <p className="text-indigo-100/70 text-base md:text-lg max-w-3xl mx-auto mb-6 leading-relaxed font-medium">
+          <p className="text-indigo-100/70 text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed font-medium px-1 xs:px-2">
             From startups to enterprises, we deliver high-quality custom software and digital products designed to drive growth and efficiency.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-3 xs:mt-4 sm:mt-6">
             <button 
               onClick={onOpenEnrollment}
-              className="bg-primary-gradient text-white px-10 py-5 rounded-xl font-black text-lg shadow-xl shadow-indigo-500/20 hover:shadow-2xl transition-all active:scale-95"
+              className="bg-primary-gradient text-white px-4 xs:px-5 sm:px-8 md:px-10 py-2 xs:py-2.5 sm:py-3 md:py-4 rounded-xl font-black text-[10px] xs:text-xs sm:text-sm md:text-base shadow-xl shadow-indigo-500/20 hover:shadow-2xl transition-all active:scale-95"
             >
               Get a Free Consultation
             </button>
@@ -182,7 +181,7 @@ const SolutionsPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment:
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 <div className="space-y-3">
                   <ShieldCheck className="w-7 h-7 text-teal-400" />
-                  <h4 className="text-white font-black text-lg">50+ Delivered</h4>
+                  <h4 className="text-white font-black text-lg">12+ Delivered</h4>
                   <p className="text-slate-400 text-sm font-medium">Proven track record</p>
                 </div>
                 <div className="space-y-3">
