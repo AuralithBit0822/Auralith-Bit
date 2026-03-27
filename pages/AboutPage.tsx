@@ -200,7 +200,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
                   </div>
                 </div>
                 <div className="p-6 text-center">
-                  <h4 className="text-lg font-black text-slate-900 tracking-tight">{member.name}</h4>
+                  <h4 className="text-lg font-black text-slate-900 tracking-tight whitespace-nowrap">{member.name}</h4>
                   <p className="text-[10px] font-black text-indigo-600 uppercase tracking-widest mt-1 mb-3">{member.role}</p>
                 </div>
               </div>
