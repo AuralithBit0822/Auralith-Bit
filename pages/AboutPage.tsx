@@ -10,10 +10,16 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
       role: "Founder & CEO",
       image: "/team/Aakriti Bista.jpeg"
     },
+
     {
       name: "Anjali Bista",
       role: "Chief Technical Officer",
       image: "/team/Anjali Bista.jpg"
+    },
+    {
+      name: "Parwesh Kumar Karn",
+      role: "Operations Manager",
+      image: "/team/Parwesh Kumar Karna.jpg"
     },
     {
       name: "Akash Prasad Barai",
@@ -24,7 +30,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
       name: "Supriya Dwivedi",
       role: "Technical Lead",
       image: "/team/Supriya Dwivedi.jpg"
-    }
+    },
   ];
 
   return (
@@ -170,7 +176,7 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {teamMembers.map((member, i) => (
               <div 
                 key={i} 
