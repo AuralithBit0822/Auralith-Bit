@@ -22,14 +22,14 @@ const AboutPage: React.FC<{ onNavigate: (v: View) => void, onOpenEnrollment: () 
       image: "/team/Parwesh Kumar Karna.jpg"
     },
     {
-      name: "Akash Prasad Barai",
+      name: "Supriya Dwivedi",
       role: "Project Manager",
-      image: "/team/Akas Barai.jpeg"
+      image: "/team/Supriya Dwivedi.jpg"
     },
     {
-      name: "Supriya Dwivedi",
+      name: "Akash Prasad Barai",
       role: "Technical Lead",
-      image: "/team/Supriya Dwivedi.jpg"
+      image: "/team/Akas Barai.jpeg"
     },
   ];
 
